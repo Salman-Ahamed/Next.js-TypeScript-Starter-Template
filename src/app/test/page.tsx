@@ -1,4 +1,5 @@
 export const Home = () => {
+  const name = "adfas";
   return <div>Home</div>;
 };
 
