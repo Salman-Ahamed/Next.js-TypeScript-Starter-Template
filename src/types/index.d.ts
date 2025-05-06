@@ -1,3 +1,15 @@
-import { ReactNode } from "react";
+declare interface IChildren {
+  children: React.ReactNode;
+}
+declare interface IClassName {
+  className?: string;
+}
+declare interface ISearchParams {
+  searchParams: { callbackUrl: string; email: string };
+}
 
-export type TChildren = Readonly<{ children: ReactNode }>;
+declare interface ICallbackUrl {
+  callbackUrl: string;
+}
+
+declare interface IClassNameWithChildren extends IChildren, IClassName {}

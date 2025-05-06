@@ -1,36 +1,141 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js TypeScript Starter Template
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-15.3.1-black?logo=next.js)](https://nextjs.org/)
+[![Bun](https://img.shields.io/badge/Bun-1.0.0-ff69b4?logo=bun)](https://bun.sh/)
+[![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
 
-First, run the development server:
+A ready-to-use starter template for Next.js projects with modern tools:
+
+<p align="center">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwind-css&logoColor=white" alt="Tailwind CSS">
+  <img src="https://img.shields.io/badge/ESLint-4B32C3?logo=eslint&logoColor=white" alt="ESLint">
+  <img src="https://img.shields.io/badge/Prettier-F7B93E?logo=prettier&logoColor=black" alt="Prettier">
+</p>
+
+## Main Features
+
+✅ Next.js 15 (App Router)  
+✅ TypeScript support  
+✅ Bun package manager  
+✅ Smart code checking (ESLint)  
+✅ Automatic code formatting (Prettier)  
+✅ Ready for production  
+✅ Organized project structure
+
+## Quick Start
+
+### Create Project
+
+Use this template to start new projects:
+
+1. Click **[Use this template](https://github.com/Salman-Ahamed/Next.js-TypeScript-Starter-Template)**
+2. Name your new repository
+3. Click `Create repository`
+
+### Local Setup
+
+1. Copy the project:
+
+   ```bash
+   git clone https://github.com/[your-username]/[your-repo].git
+   cd [your-repo]
+   ```
+
+2. Install packages:
+
+   ```bash
+   bun install
+   ```
+
+3. Start development:
+   ```bash
+   bun run dev
+   ```
+
+## Development Helpers
+
+### Common Commands
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Start development server
+bun run dev
+
+# Build for production
+bun run build
+
+# Check code quality
+bun run lint
+
+# Fix code issues
+bun run lint:fix
+
+# Check formatting
+bun run format:check
+
+# Auto-format code
+bun run format
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Code Quality
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Automatic Checks
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+We use these tools to keep code clean:
 
-## Learn More
+- **ESLint** finds code issues
+- **Prettier** formats code
+- **Tailwind CSS** sorting
 
-To learn more about Next.js, take a look at the following resources:
+Example import rules:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```javascript
+"import/order": [
+  "error",
+  {
+    "groups": ["builtin", "external", "internal"],
+    "alphabetize": { "order": "asc" }
+  }
+]
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Formatting Rules
 
-## Deploy on Vercel
+Our formatting setup helps with:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Clean code structure
+- Proper Tailwind CSS class order
+- Consistent styling
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deployment Ready
+
+Works with popular platforms:
+
+- Vercel
+- Netlify
+- AWS
+- Docker
+
+Create `.env` file from `.env.example` for production settings.
+
+## How to Contribute
+
+Read our [CONTRIBUTING GUIDE](CONTRIBUTING.md) to help improve this project.
+
+## License
+
+Free to use under [MIT License](LICENSE). See LICENSE file for details.
+
+```
+
+Key improvements for simplicity:
+1. Short sentences and common words
+2. Removed technical jargon
+3. Clear section headings
+4. Simple explanations of tools
+5. Easy-to-follow steps
+6. Visual badges kept for quick understanding
+7. Friendly formatting
+
+This version is suitable for both new developers while keeping all important technical information.
+```
