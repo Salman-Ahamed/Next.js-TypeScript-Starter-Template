@@ -29,7 +29,7 @@ A ready-to-use starter template for Next.js projects with modern tools:
 
 Use this template to start new projects:
 
-1. Click **[Use this template](https://github.com/[your-username]/[template-repo]/generate)**
+1. Click **[Use this template](https://github.com/Salman-Ahamed/Next.js-TypeScript-Starter-Template)**
 2. Name your new repository
 3. Click `Create repository`
 
