@@ -267,7 +267,7 @@ For assistance with contribution setup or technical issues:
 2. Open a Support ticket in Issues
 3. Join our Discord development channel
 
-Feel free to open an [Issue](https://github.com/your-org/project-name/issues) or reach out in our discussion board if you get stuck.
+Feel free to open an [Issue](https://github.com/Salman-Ahamed/Next.js-TypeScript-Starter-Template/issues) or reach out in our discussion board if you get stuck.
 
 ---
 
