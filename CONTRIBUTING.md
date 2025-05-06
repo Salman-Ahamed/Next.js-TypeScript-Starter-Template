@@ -1,117 +1,77 @@
-# কন্ট্রিবিউটিং গাইডলাইন
+# Contribution Guidelines 🤝
 
-## প্রজেক্ট সেটআপ
+Welcome to our project! We appreciate your interest in contributing. Please follow these guidelines to ensure a smooth collaboration.
 
-1. **প্রজেক্ট ক্লোন করুন**:
+## Development Setup
+
+### Prerequisites
+
+- Node.js v18+
+- Bun v1.0+
+- Git
+
+### Initial Setup
+
+1. Clone the repository:
 
    ```bash
    git clone https://github.com/Baitul-Hikmah/Get-Ilmi.git
    cd Get-Ilmi
    ```
 
-2. **ডিপেন্ডেন্সি ইনস্টল করুন**:
+2. Install dependencies using Bun:
 
    ```bash
    bun install
    ```
 
-3. **ডেভেলপমেন্ট সার্ভার চালু করুন**:
+3. Start development server:
    ```bash
    bun run dev
    ```
 
-## কোড স্টাইল এবং ফরম্যাটিং
+## Code Quality Standards
 
-### ESLint কনফিগারেশন
+### Linting Configuration (ESLint)
 
-আমাদের প্রজেক্টে ESLint ব্যবহার করা হয়েছে কোড কোয়ালিটি এবং কনসিস্টেন্সি নিশ্চিত করার জন্য। নিচে আমাদের ESLint কনফিগারেশনের বিস্তারিত বর্ণনা দেওয়া হল:
+Our ESLint configuration enforces code consistency and best practices. Key features include:
 
-```json
-{
-  "extends": ["next/core-web-vitals", "plugin:@typescript-eslint/recommended"],
-  "rules": {
-    "react/function-component-definition": [
-      "error",
-      {
-        "namedComponents": "arrow-function",
-        "unnamedComponents": "arrow-function"
-      }
-    ],
-    "@typescript-eslint/no-unused-vars": [
-      "warn",
-      {
-        "argsIgnorePattern": "^_",
-        "varsIgnorePattern": "^_",
-        "caughtErrorsIgnorePattern": "^_"
-      }
-    ],
-    "no-restricted-syntax": ["error", "FunctionDeclaration", "FunctionExpression"]
-  }
-}
-```
+- Next.js Core Web Vitals optimization
+- TypeScript best practices
+- Strict import ordering
+- React component conventions
 
-#### কোডিং স্টাইল গাইডলাইন:
+#### Key Rules:
 
-1. **কম্পোনেন্ট লিখার নিয়ম**:
+1. **Component Architecture**
 
    ```typescript
-   import { FC } from "react";
-
-   // ✅ সঠিক উদাহরণ
-   interface Props {
+   // Recommended
+   interface UserProfileProps {
      name: string;
      age: number;
    }
 
-   const UserProfile: FC<Props> = ({ name, age }) => {
-     return (
-       <div>
-         <h1>{name}</h1>
-         <p>Age: {age}</p>
-       </div>
-     );
-   };
+   const UserProfile: FC<UserProfileProps> = ({ name, age }) => (
+     <div>{name} ({age})</div>
+   );
 
-   // ❌ ভুল উদাহরণ
-   const UserProfile = (props) => {
-     return (
-       <div>
-         <h1>{props.name}</h1>
-         <p>Age: {props.age}</p>
-       </div>
-     );
-   };
-   ```
-
-2. **টাইপস্ক্রিপ্ট টাইপ ব্যবহার**:
-
-   ```typescript
-   // ✅ সঠিক উদাহরণ
-   type UserRole = "admin" | "user" | "guest";
-   interface User {
-     id: string;
-     name: string;
-     role: UserRole;
+   // Avoid
+   function UserProfile(props) {
+     return <div>{props.name}</div>;
    }
-
-   // ❌ ভুল উদাহরণ
-   const user = {
-     id: "123",
-     name: "John",
-     role: "admin", // any টাইপ এড়িয়ে চলুন
-   };
    ```
 
-3. **ফাংশন লিখার নিয়ম**:
+2. **Function Style**
 
    ```typescript
-   // ✅ সঠিক উদাহরণ
-   const calculateTotal = (items: Item[]): number => {
+   // Recommended
+   const getTotal = (items: Item[]): number => {
      return items.reduce((sum, item) => sum + item.price, 0);
    };
 
-   // ❌ ভুল উদাহরণ
-   function calculateTotal(items) {
+   // Avoid
+   function getTotal(items) {
      let sum = 0;
      for (let i = 0; i < items.length; i++) {
        sum += items[i].price;
@@ -120,50 +80,195 @@
    }
    ```
 
-## কোড সাবমিট করার প্রসেস
+3. **TypeScript Conventions**
 
-1. নতুন ব্রাঞ্চ তৈরি করুন:
+   ```typescript
+   // Use explicit types
+   type UserRole = "admin" | "user";
+   interface User {
+     id: string;
+     role: UserRole;
+   }
 
-   ```bash
-   git checkout -b issueNo-your-feature-name
+   // Handle unused variables properly
+   const [_ignored, setState] = useState(null);
    ```
 
-2. কোড পরিবর্তন করুন এবং কমিট করুন:
+4. **Import Ordering**
 
-   ```bash
-   git add .
-   git commit -m "feat: your feature description"
+   - Built-in modules → External dependencies → Internal aliases
+   - Aliased paths (`@/app`, `@/components`, etc.) grouped logically
+   - Automatic alphabetical sorting within groups
+
+5. **Unused Parameters**
+
+   Prefix with `_` if not used.
+
+   ```typescript
+   // Recommended
+   const handler = (_req: Request): void => {};
    ```
 
-3. কোড লিন্ট এবং ফরম্যাট চেক করুন:
+6. **Tailwind CSS Class Order**
 
-   ```bash
-   bun run lint
-   bun run lint:fix
+   Use [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss).
+
+   ```typescript
+   // Recommended
+   <div className='flex items-center justify-center p-4'>
+   <h1 className='text-lg font-semibold text-gray-800'>Welcome</h1>
+   </div>
    ```
 
-4. পুল রিকোয়েস্ট তৈরি করুন
+7. **Comments**
 
-## বেস্ট প্র্যাকটিস
+   Add meaningful comments for complex logic or edge cases.
 
-1. **কোড রিভিউ**:
+   ```ts
+   // Filter users with verified emails only
+   const verifiedUsers = users.filter((user) => user.emailVerified);
+   ```
 
-   - ছোট ছোট কমিট করুন
-   - স্পষ্ট কমিট মেসেজ লিখুন
-   - PR ডেসক্রিপশনে পরিবর্তনগুলো বিস্তারিত লিখুন
+### Formatting (Prettier)
 
-2. **টেস্টিং**:
+Our code formatting rules ensure consistent styling across the project:
 
-   - নতুন ফিচার এর জন্য টেস্ট লিখুন
-   - সব টেস্ট পাস হওয়া নিশ্চিত করুন
+```json
+{
+  "printWidth": 100,
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
+  "singleQuote": false,
+  "jsxSingleQuote": true,
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "arrowParens": "always",
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "tailwindAttributes": ["class", "className", "cn"],
+  "tailwindFunctions": ["clsx", "cva"]
+}
+```
 
-3. **ডকুমেন্টেশন**:
-   - নতুন ফিচার এর জন্য ডকুমেন্টেশন আপডেট করুন
-   - কোড কমেন্ট লিখুন যেখানে প্রয়োজন
+#### Formatting Commands:
 
-## সাহায্য চাইতে
+```bash
+# Check formatting
+bun run lint:format
 
-যদি কোন সমস্যা থাকে বা সাহায্য প্রয়োজন হয়:
+# Auto-format files
+bun run format
+```
 
-1. GitHub Issues এ নতুন ইস্যু খুলুন
-2. টিম মেম্বারদের সাথে সরাসরি যোগাযোগ করুন
+## Contribution Workflow
+
+1. Create a feature branch:
+
+   ```bash
+   bun run create-branch feat/your-feature-name
+   ```
+
+2. Implement your changes with atomic commits:
+
+   ```bash
+   git commit -m "feat: add user profile component"
+   git commit -m "fix: resolve mobile layout issue"
+   ```
+
+3. Validate your changes:
+
+   ```bash
+   bun run lint  # Check for errors
+   bun run lint:fix  # Auto-fix lint issues
+   bun run format  # Apply formatting
+   ```
+
+4. Push changes and create a Pull Request:
+   ```bash
+   git push origin feat/your-feature-name
+   ```
+
+## Quality Assurance
+
+### Code Review Requirements
+
+- All new features must include TypeScript type definitions
+- Component props must be properly destructured
+- Complex logic requires JSDoc comments
+- ESLint must report 0 warnings/errors
+- 100% Prettier formatting compliance
+
+### Testing Guidelines
+
+1. Create unit tests for new components
+2. Add Storybook stories for UI components
+3. Verify accessibility standards (a11y)
+4. Update relevant documentation
+
+## Development Practices
+
+### Recommended Tooling
+
+- VS Code with ESLint/Prettier extensions
+- Bun workspace configuration
+- TypeScript v5+
+- Import Cost extension for bundle monitoring
+
+### Branch Naming Convention
+
+```
+[type]/[short-description]
+```
+
+Types: `feat`, `fix`, `docs`, `chore`, `refactor`
+
+### Commit Message Guidelines
+
+We use [Conventional Commits](https://www.conventionalcommits.org):
+
+Format:
+
+```
+<type>(optional scope): <description>
+```
+
+**Types**:
+
+- `feat`: A new feature
+- `fix`: A bug fix
+- `docs`: Documentation changes
+- `style`: Formatting only (no code change)
+- `refactor`: Code change that neither fixes a bug nor adds a feature
+- `test`: Adding or updating tests
+- `chore`: Maintenance tasks (e.g., update deps)
+
+**Examples**:
+
+- `feat(auth): add login API`
+- `fix(dashboard): fix user loading error`
+- `docs: update README with setup steps`
+
+### Pull Request Checklist
+
+Before submitting a PR:
+
+- [ ] Code compiles without errors.
+- [ ] All tests pass.
+- [ ] Linting & formatting complete.
+- [ ] Meaningful commit messages.
+- [ ] PR description includes what and why.
+- [ ] No unnecessary files (e.g. `.env`, `node_modules`, etc).
+
+## Support
+
+For assistance with contribution setup or technical issues:
+
+1. Check our GitHub Discussions
+2. Open a Support ticket in Issues
+3. Join our Discord development channel
+
+Feel free to open an [Issue](https://github.com/your-org/project-name/issues) or reach out in our discussion board if you get stuck.
+
+---
+
+We appreciate your contributions! 🚀 Thanks again for contributing! 💙
