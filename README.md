@@ -137,5 +137,5 @@ Key improvements for simplicity:
 6. Visual badges kept for quick understanding
 7. Friendly formatting
 
-This version is suitable for both new developers and non-native English speakers while keeping all important technical information.
+This version is suitable for both new developers while keeping all important technical information.
 ```
