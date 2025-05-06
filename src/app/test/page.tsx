@@ -1,11 +1,24 @@
 import { FC } from "react";
 
+import { Demo } from "@/components";
+
+import { IconSvgProps } from "@/types/common";
+
 export const Home: FC = () => {
-  const name = "adfas";
+  const _name = "ab";
+  return (
+    <div>
+      <h1>Home</h1>
+      <Demo />
+    </div>
+  );
+};
+
+const OldFunction: FC<IconSvgProps> = () => {
+  console.log("Normal function");
   return <div>Home</div>;
 };
 
-function OldFunction() {
-  console.log("Normal function");
+const Div = () => {
   return <div>Home</div>;
-}
+};
