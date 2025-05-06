@@ -140,7 +140,7 @@ Our code formatting rules ensure consistent styling across the project:
   "useTabs": false,
   "semi": true,
   "singleQuote": false,
-  "jsxSingleQuote": true,
+  "jsxSingleQuote": false,
   "trailingComma": "all",
   "bracketSpacing": true,
   "arrowParens": "always",
