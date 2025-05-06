@@ -1,15 +1,3 @@
-declare interface IChildren {
-  children: React.ReactNode;
-}
-declare interface IClassName {
-  className?: string;
-}
-declare interface ISearchParams {
-  searchParams: { callbackUrl: string; email: string };
-}
+import { ReactNode } from "react";
 
-declare interface ICallbackUrl {
-  callbackUrl: string;
-}
-
-declare interface IClassNameWithChildren extends IChildren, IClassName {}
+export type TChildren = Readonly<{ children: ReactNode }>;
