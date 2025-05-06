@@ -1,6 +1,6 @@
 # Next.js TypeScript Starter Template
 
-[![Next.js](https://img.shields.io/badge/Next.js-14.2.0-black?logo=next.js)](https://nextjs.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-15.3.1-black?logo=next.js)](https://nextjs.org/)
 [![Bun](https://img.shields.io/badge/Bun-1.0.0-ff69b4?logo=bun)](https://bun.sh/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
 
