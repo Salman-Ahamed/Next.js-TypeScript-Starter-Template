@@ -25,6 +25,7 @@ const eslintConfig = [
           unnamedComponents: "arrow-function",
         },
       ],
+
       "@typescript-eslint/no-unused-vars": [
         "warn",
         {
@@ -32,6 +33,11 @@ const eslintConfig = [
           varsIgnorePattern: "^_",
           caughtErrorsIgnorePattern: "^_",
         },
+      ],
+      "no-restricted-syntax": [
+        "error",
+        "FunctionDeclaration",
+        "FunctionExpression",
       ],
     },
   },

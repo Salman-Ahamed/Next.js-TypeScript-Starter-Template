@@ -1,6 +1,7 @@
 {
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": "always"
+        "source.fixAll.eslint": "always",
+        "source.fixAll": "always",
     },
     "eslint.useFlatConfig": true,
     "eslint.validate": [

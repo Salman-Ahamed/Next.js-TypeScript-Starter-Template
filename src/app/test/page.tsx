@@ -1,10 +1,7 @@
-const unusedVar = 123; // এই লাইনে এরর আসবে
-
-export const WrongComponent = () => {
-  return <div>Test</div>;
+export const Home = () => {
+  return <div>Home</div>;
 };
 
-export default function Home() {
-  console.log("Test"); // এই লাইনে ওয়ার্নিং আসবে
-  return <div>Home Page</div>;
+function OldFunction() {
+  console.log("Normal function");
 }
