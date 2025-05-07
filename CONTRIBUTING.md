@@ -32,6 +32,15 @@ Welcome to our project! We appreciate your interest in contributing. Please foll
 
 ## Code Quality Standards
 
+### Git Hooks (Husky)
+
+We use Husky to enforce code quality before commits:
+
+- Pre-commit hooks run automatically
+- Linting and formatting checks
+- Prevents commits with errors
+- Allows commits with warnings
+
 ### Linting Configuration (ESLint)
 
 Our ESLint configuration enforces code consistency and best practices. Key features include:
@@ -40,6 +49,7 @@ Our ESLint configuration enforces code consistency and best practices. Key featu
 - TypeScript best practices
 - Strict import ordering
 - React component conventions
+- No console.log statements (use console.warn/error instead)
 
 #### Key Rules:
 
@@ -195,7 +205,7 @@ bun run format
 - All new features must include TypeScript type definitions
 - Component props must be properly destructured
 - Complex logic requires JSDoc comments
-- ESLint must report 0 warnings/errors
+- ESLint must report 0 errors (warnings are allowed)
 - 100% Prettier formatting compliance
 
 ### Testing Guidelines
