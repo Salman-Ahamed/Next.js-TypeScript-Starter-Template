@@ -4,7 +4,7 @@
 [![Bun](https://img.shields.io/badge/Bun-1.0.0-ff69b4?logo=bun)](https://bun.sh/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
 
-A ready-to-use starter template for Next.js projects with modern tools:
+A simple starter template for Next.js projects with useful tools:
 
 <p align="center">
   <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" alt="TypeScript">
@@ -16,91 +16,91 @@ A ready-to-use starter template for Next.js projects with modern tools:
 
 ## Main Features
 
-✅ Next.js 15 (App Router)
-✅ TypeScript support
-✅ Package Manager Support (Bun recommended, npm, yarn, pnpm)
-✅ Smart code checking (ESLint)
-✅ Automatic code formatting (Prettier)
-✅ Git hooks with Husky
-✅ Ready for production
-✅ Organized project structure
+- ✅ Next.js 15 (App Router)
+- ✅ TypeScript for better coding
+- ✅ Bun for fast package management
+- ✅ ESLint to check code mistakes
+- ✅ Prettier to format code automatically
+- ✅ Husky for Git checks before commits
+- ✅ Ready for production use
+- ✅ Clean project structure
 
-## Quick Start
+## How to Start
 
-### Create Project
+### Option 1: Use the CLI (Recommended)
 
-Use this template to start new projects:
+1. Create a new project with any of these commands:
 
-1. Click **[Use this template](https://github.com/Salman-Ahamed/Next.js-TypeScript-Starter-Template)**
-2. Name your new repository
-3. Click `Create repository`
+- **Recommended (Bun) 🌟**
+  ```bash
+  bunx next-ts-app
+  ```
+- **npm 📦**
+  ```bash
+  npx next-ts-app
+  ```
+- **yarn 🧶**
+  ```bash
+  yarn create next-ts-app
+  ```
+- **pnpm ⚡**
+  ```bash
+  pnpm dlx next-ts-app
+  ```
 
-### Local Setup
+2. Answer these questions:
 
-1. Copy the project:
+   - Enter your project name (e.g., `my-project`).
+   - Choose a package manager (`bun`, `pnpm`, `yarn`, or `npm`).
+
+3. Follow the steps shown:
+   For example, if you choose `bun`:
+
+   ```bash
+   cd my-project
+   bun install
+   bun run dev
+   ```
+
+   **Note**: If you pick `bun`, make sure Bun is installed (visit [bun.sh](https://bun.sh)). For `pnpm` or `yarn`, install them first if needed.
+
+### Option 2: Use GitHub Template
+
+1. Click **[Use this template](https://github.com/Salman-Ahamed/Next.js-TypeScript-Starter-Template)** on GitHub.
+2. Name your new repository.
+3. Click `Create repository`.
+
+4. Set up locally:
 
    ```bash
    git clone https://github.com/[your-username]/[your-repo].git
    cd [your-repo]
-   ```
-
-2. Install packages (choose your preferred package manager):
-
-   ```bash
-   # Using Bun (Recommended)
    bun install
-
-   # Using npm
-   npm install
-
-   # Using yarn
-   yarn install
-
-   # Using pnpm
-   pnpm install
-   ```
-
-3. Start development:
-
-   ```bash
-   # Using Bun (Recommended)
    bun run dev
-
-   # Using npm
-   npm run dev
-
-   # Using yarn
-   yarn dev
-
-   # Using pnpm
-   pnpm dev
    ```
 
-## Development Helpers
+## Useful Commands
 
-### Common Commands
+Run these commands in your project folder:
 
 ```bash
-# Start development server
-bun run dev      # or npm run dev, yarn dev, pnpm dev
+# Start the development server
+bun run dev
 
 # Build for production
-bun run build    # or npm run build, yarn build, pnpm build
+bun run build
 
-# Start production server
-bun run start    # or npm run start, yarn start, pnpm start
+# Check code for errors
+bun run lint
 
-# Check code quality
-bun run lint     # or npm run lint, yarn lint, pnpm lint
+# Fix code errors automatically
+bun run lint:fix
 
-# Fix code issues
-bun run lint:fix # or npm run lint:fix, yarn lint:fix, pnpm lint:fix
+# Check code formatting
+bun run format:check
 
-# Check formatting
-bun run format:check # or npm run format:check, yarn format:check, pnpm format:check
-
-# Auto-format code
-bun run format   # or npm run format, yarn format, pnpm format
+# Format code automatically
+bun run format
 ```
 
 ## Code Quality
