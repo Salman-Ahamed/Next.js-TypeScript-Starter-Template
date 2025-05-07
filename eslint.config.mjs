@@ -94,7 +94,7 @@ const eslintConfig = [
         },
       ],
       "@typescript-eslint/no-unused-vars": [
-        "warn",
+        "error",
         {
           argsIgnorePattern: "^_",
           varsIgnorePattern: "^_",
@@ -102,7 +102,7 @@ const eslintConfig = [
         },
       ],
       "no-restricted-syntax": ["error", "FunctionDeclaration", "FunctionExpression"],
-      "no-console": ["warn", { allow: ["warn", "error"] }],
+      "no-console": ["error", { allow: ["warn", "error"] }],
     },
   },
 ];
