@@ -1,86 +1,85 @@
-# Contribution Guidelines 🤝
+# How to Contribute 🤝
 
-Welcome to our project! We appreciate your interest in contributing. Please follow these guidelines to ensure a smooth collaboration.
+Welcome to the Next.js TypeScript Starter Template! We’re happy you want to help. Follow these steps to contribute easily.
 
-## Development Setup
+## Set Up Your Environment
 
-### Prerequisites
+### What You Need
 
-- Node.js v18+
-- Bun v1.0+
+- Node.js (version 18 or higher)
+- Bun (version 1.0 or higher)
 - Git
 
-### Initial Setup
+### Steps to Set Up
 
-1. Clone the repository:
+1. Clone the project:
 
    ```bash
-   git clone https://github.com/Baitul-Hikmah/Get-Ilmi.git
-   cd Get-Ilmi
+   git clone https://github.com/Salman-Ahamed/Next.js-TypeScript-Starter-Template.git
+   cd Next.js-TypeScript-Starter-Template
    ```
 
-2. Install dependencies using Bun:
+2. Install dependencies:
 
    ```bash
    bun install
    ```
 
-3. Start development server:
+3. Start the development server:
+
    ```bash
    bun run dev
    ```
 
-## Code Quality Standards
+## Code Quality Rules
 
-### Git Hooks (Husky)
+### Git Checks (Husky)
 
-We use Husky to enforce code quality before commits:
+We use Husky to check code before you commit:
 
-- Pre-commit hooks run automatically
-- Linting and formatting checks
-- Prevents commits with errors
-- Allows commits with warnings
+- It runs automatically before commits.
+- It checks for code mistakes and formatting.
+- It stops commits if there are errors (warnings are okay).
 
-### Linting Configuration (ESLint)
+### Code Checks (ESLint)
 
-Our ESLint configuration enforces code consistency and best practices. Key features include:
+We use ESLint to keep code consistent. Here’s what it does:
 
-- Next.js Core Web Vitals optimization
-- TypeScript best practices
-- Strict import ordering
-- React component conventions
-- No console.log statements (use console.warn/error instead)
+- Follows Next.js and TypeScript best practices.
+- Organizes imports in a specific order.
+- Ensures React components are written properly.
+- No `console.log` (use `console.warn` or `console.error` instead).
 
-#### Key Rules:
+#### Examples of Good Code
 
-1. **Component Architecture**
+1. **Components**:
 
    ```typescript
-   // Recommended
+   // Good
    interface UserProfileProps {
      name: string;
      age: number;
    }
 
-   const UserProfile: FC<UserProfileProps> = ({ name, age }) => (
+   const UserProfile: React.FC<UserProfileProps> = ({ name, age }) => (
      <div>{name} ({age})</div>
    );
 
-   // Avoid
+   // Bad
    function UserProfile(props) {
      return <div>{props.name}</div>;
    }
    ```
 
-2. **Function Style**
+2. **Functions**:
 
    ```typescript
-   // Recommended
+   // Good
    const getTotal = (items: Item[]): number => {
      return items.reduce((sum, item) => sum + item.price, 0);
    };
 
-   // Avoid
+   // Bad
    function getTotal(items) {
      let sum = 0;
      for (let i = 0; i < items.length; i++) {
@@ -90,195 +89,137 @@ Our ESLint configuration enforces code consistency and best practices. Key featu
    }
    ```
 
-3. **TypeScript Conventions**
+3. **TypeScript**:
 
    ```typescript
-   // Use explicit types
+   // Good
    type UserRole = "admin" | "user";
    interface User {
      id: string;
      role: UserRole;
    }
 
-   // Handle unused variables properly
+   // Handle unused variables
    const [_ignored, setState] = useState(null);
    ```
 
-4. **Import Ordering**
-
-   - Built-in modules → External dependencies → Internal aliases
-   - Aliased paths (`@/app`, `@/components`, etc.) grouped logically
-   - Automatic alphabetical sorting within groups
-
-5. **Unused Parameters**
-
-   Prefix with `_` if not used.
+4. **Comments**:
 
    ```typescript
-   // Recommended
-   const handler = (_req: Request): void => {};
+   // Explain tricky code
+   const verifiedUsers = users.filter((user) => user.emailVerified); // Keep only users with verified emails
    ```
 
-6. **Tailwind CSS Class Order**
+### Code Formatting (Prettier)
 
-   Use [prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss).
+Prettier keeps your code neat:
 
-   ```typescript
-   // Recommended
-   <div className='flex items-center justify-center p-4'>
-   <h1 className='text-lg font-semibold text-gray-800'>Welcome</h1>
-   </div>
-   ```
+- It formats code automatically.
+- It organizes Tailwind CSS classes.
+- Commands to use:
 
-7. **Comments**
+  ```bash
+  # Check formatting
+  bun run format:check
 
-   Add meaningful comments for complex logic or edge cases.
+  # Fix formatting
+  bun run format
+  ```
 
-   ```ts
-   // Filter users with verified emails only
-   const verifiedUsers = users.filter((user) => user.emailVerified);
-   ```
+## How to Make Changes
 
-### Formatting (Prettier)
-
-Our code formatting rules ensure consistent styling across the project:
-
-```json
-{
-  "printWidth": 100,
-  "tabWidth": 2,
-  "useTabs": false,
-  "semi": true,
-  "singleQuote": false,
-  "jsxSingleQuote": false,
-  "trailingComma": "all",
-  "bracketSpacing": true,
-  "arrowParens": "always",
-  "plugins": ["prettier-plugin-tailwindcss"],
-  "tailwindAttributes": ["class", "className", "cn"],
-  "tailwindFunctions": ["clsx", "cva"]
-}
-```
-
-#### Formatting Commands:
-
-```bash
-# Check formatting
-bun run lint:format
-
-# Auto-format files
-bun run format
-```
-
-## Contribution Workflow
-
-1. Create a feature branch:
+1. Create a new branch:
 
    ```bash
-   bun run create-branch feat/your-feature-name
+   git checkout -b feat/your-feature-name
    ```
 
-2. Implement your changes with atomic commits:
+2. Make your changes and commit them:
 
    ```bash
    git commit -m "feat: add user profile component"
-   git commit -m "fix: resolve mobile layout issue"
+   git commit -m "fix: fix mobile layout issue"
    ```
 
-3. Validate your changes:
+3. Check your code:
 
    ```bash
-   bun run lint  # Check for errors
-   bun run lint:fix  # Auto-fix lint issues
-   bun run format  # Apply formatting
+   bun run lint      # Find errors
+   bun run lint:fix  # Fix errors
+   bun run format    # Format code
    ```
 
-4. Push changes and create a Pull Request:
+4. Push your changes and create a Pull Request (PR):
+
    ```bash
    git push origin feat/your-feature-name
    ```
 
-## Quality Assurance
+   Go to GitHub and create a PR from your branch.
 
-### Code Review Requirements
+## Before You Submit
 
-- All new features must include TypeScript type definitions
-- Component props must be properly destructured
-- Complex logic requires JSDoc comments
-- ESLint must report 0 errors (warnings are allowed)
-- 100% Prettier formatting compliance
+### Code Review Checklist
 
-### Testing Guidelines
+- Use TypeScript for all new code.
+- Break down (destructure) component props.
+- Add comments for tricky code.
+- ESLint should show 0 errors (warnings are okay).
+- Code must be formatted with Prettier.
 
-1. Create unit tests for new components
-2. Add Storybook stories for UI components
-3. Verify accessibility standards (a11y)
-4. Update relevant documentation
+### Testing Checklist
 
-## Development Practices
+- Test new components.
+- Add Storybook stories for UI components (if applicable).
+- Check accessibility (a11y).
+- Update the `README.md` if needed.
 
-### Recommended Tooling
+## Good Practices
 
-- VS Code with ESLint/Prettier extensions
-- Bun workspace configuration
-- TypeScript v5+
-- Import Cost extension for bundle monitoring
+### Tools We Recommend
 
-### Branch Naming Convention
+- Use VS Code with ESLint and Prettier extensions.
+- Use TypeScript (version 5 or higher).
+- Use the Import Cost extension to check bundle size.
 
-```
-[type]/[short-description]
-```
+### Branch Names
 
-Types: `feat`, `fix`, `docs`, `chore`, `refactor`
+Use this format: `[type]/[short-description]`
 
-### Commit Message Guidelines
+- Types: `feat` (new feature), `fix` (bug fix), `docs` (docs update), `chore` (small tasks), `refactor` (code cleanup).
+- Examples: `feat/add-login`, `fix/bug-mobile-view`.
 
-We use [Conventional Commits](https://www.conventionalcommits.org):
+### Commit Messages
 
-Format:
+Follow this format: `<type>: <description>`
 
-```
-<type>(optional scope): <description>
-```
+- Types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`.
+- Examples:
+  - `feat: add login page`
+  - `fix: fix button alignment`
+  - `docs: update setup guide`
 
-**Types**:
+### Pull Request Tips
 
-- `feat`: A new feature
-- `fix`: A bug fix
-- `docs`: Documentation changes
-- `style`: Formatting only (no code change)
-- `refactor`: Code change that neither fixes a bug nor adds a feature
-- `test`: Adding or updating tests
-- `chore`: Maintenance tasks (e.g., update deps)
+Before submitting your PR:
 
-**Examples**:
-
-- `feat(auth): add login API`
-- `fix(dashboard): fix user loading error`
-- `docs: update README with setup steps`
-
-### Pull Request Checklist
-
-Before submitting a PR:
-
-- [ ] Code compiles without errors.
+- [ ] Code runs without errors.
 - [ ] All tests pass.
-- [ ] Linting & formatting complete.
-- [ ] Meaningful commit messages.
-- [ ] PR description includes what and why.
-- [ ] No unnecessary files (e.g. `.env`, `node_modules`, etc).
+- [ ] Code is linted and formatted.
+- [ ] Commits have clear messages.
+- [ ] PR description explains what you did and why.
+- [ ] No extra files (like `.env` or `node_modules`).
 
-## Support
+## Need Help?
 
-For assistance with contribution setup or technical issues:
+If you get stuck:
 
-1. Check our GitHub Discussions
-2. Open a Support ticket in Issues
-3. Join our Discord development channel
+1. Check GitHub Discussions.
+2. Open an Issue on GitHub.
+3. Join our Discord community (if available).
 
-Feel free to open an [Issue](https://github.com/Salman-Ahamed/Next.js-TypeScript-Starter-Template/issues) or reach out in our discussion board if you get stuck.
+Feel free to open an [Issue](https://github.com/Salman-Ahamed/Next.js-TypeScript-Starter-Template/issues) if you need help.
 
 ---
 
-We appreciate your contributions! 🚀 Thanks again for contributing! 💙
+Thanks for contributing! 🚀 We appreciate your help! 💙

@@ -1,5 +1,7 @@
 import { NewPage } from "@/components/layout";
 
-export const Home = () => {
+const Home = () => {
   return <NewPage title="Home Page!" />;
 };
+
+export default Home;
