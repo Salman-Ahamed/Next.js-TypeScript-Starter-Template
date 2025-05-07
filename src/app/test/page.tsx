@@ -1,3 +1,5 @@
 import { NewPage } from "@/components/layout";
 
-export const TestPage = () => <NewPage title="Test Page!" />;
+export const TestPage = () => {
+  return <NewPage title="Test Page!" />;
+};

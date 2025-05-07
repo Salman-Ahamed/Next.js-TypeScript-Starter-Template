@@ -11,6 +11,7 @@ A ready-to-use starter template for Next.js projects with modern tools:
   <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwind-css&logoColor=white" alt="Tailwind CSS">
   <img src="https://img.shields.io/badge/ESLint-4B32C3?logo=eslint&logoColor=white" alt="ESLint">
   <img src="https://img.shields.io/badge/Prettier-F7B93E?logo=prettier&logoColor=black" alt="Prettier">
+  <img src="https://img.shields.io/badge/Husky-000000?logo=git&logoColor=white" alt="Husky">
 </p>
 
 ## Main Features
@@ -20,6 +21,7 @@ A ready-to-use starter template for Next.js projects with modern tools:
 ✅ Bun package manager  
 ✅ Smart code checking (ESLint)  
 ✅ Automatic code formatting (Prettier)  
+✅ Git hooks with Husky  
 ✅ Ready for production  
 ✅ Organized project structure
 
@@ -86,6 +88,8 @@ We use these tools to keep code clean:
 - **ESLint** finds code issues
 - **Prettier** formats code
 - **Tailwind CSS** sorting
+- **Husky** enforces pre-commit checks
+- **lint-staged** runs checks on staged files
 
 Example import rules:
 
@@ -106,6 +110,7 @@ Our formatting setup helps with:
 - Clean code structure
 - Proper Tailwind CSS class order
 - Consistent styling
+- Pre-commit quality checks
 
 ## Deployment Ready
 
