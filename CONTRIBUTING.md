@@ -55,7 +55,7 @@ We use ESLint to keep code consistent. Here’s what it does:
 1. **Components**:
 
    ```typescript
-   // Good
+   // Recommended
    interface UserProfileProps {
      name: string;
      age: number;
@@ -65,7 +65,7 @@ We use ESLint to keep code consistent. Here’s what it does:
      <div>{name} ({age})</div>
    );
 
-   // Bad
+   // Avoid
    function UserProfile(props) {
      return <div>{props.name}</div>;
    }
@@ -74,12 +74,12 @@ We use ESLint to keep code consistent. Here’s what it does:
 2. **Functions**:
 
    ```typescript
-   // Good
+   // Recommended
    const getTotal = (items: Item[]): number => {
      return items.reduce((sum, item) => sum + item.price, 0);
    };
 
-   // Bad
+   // Avoid
    function getTotal(items) {
      let sum = 0;
      for (let i = 0; i < items.length; i++) {
@@ -92,7 +92,7 @@ We use ESLint to keep code consistent. Here’s what it does:
 3. **TypeScript**:
 
    ```typescript
-   // Good
+   // Recommended
    type UserRole = "admin" | "user";
    interface User {
      id: string;
