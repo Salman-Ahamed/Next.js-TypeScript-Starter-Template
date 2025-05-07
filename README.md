@@ -16,13 +16,13 @@ A ready-to-use starter template for Next.js projects with modern tools:
 
 ## Main Features
 
-✅ Next.js 15 (App Router)  
-✅ TypeScript support  
-✅ Bun package manager  
-✅ Smart code checking (ESLint)  
-✅ Automatic code formatting (Prettier)  
-✅ Git hooks with Husky  
-✅ Ready for production  
+✅ Next.js 15 (App Router)
+✅ TypeScript support
+✅ Package Manager Support (Bun recommended, npm, yarn, pnpm)
+✅ Smart code checking (ESLint)
+✅ Automatic code formatting (Prettier)
+✅ Git hooks with Husky
+✅ Ready for production
 ✅ Organized project structure
 
 ## Quick Start
@@ -44,15 +44,35 @@ Use this template to start new projects:
    cd [your-repo]
    ```
 
-2. Install packages:
+2. Install packages (choose your preferred package manager):
 
    ```bash
+   # Using Bun (Recommended)
    bun install
+
+   # Using npm
+   npm install
+
+   # Using yarn
+   yarn install
+
+   # Using pnpm
+   pnpm install
    ```
 
 3. Start development:
    ```bash
+   # Using Bun (Recommended)
    bun run dev
+
+   # Using npm
+   npm run dev
+
+   # Using yarn
+   yarn dev
+
+   # Using pnpm
+   pnpm dev
    ```
 
 ## Development Helpers
@@ -61,22 +81,25 @@ Use this template to start new projects:
 
 ```bash
 # Start development server
-bun run dev
+bun run dev      # or npm run dev, yarn dev, pnpm dev
 
 # Build for production
-bun run build
+bun run build    # or npm run build, yarn build, pnpm build
+
+# Start production server
+bun run start    # or npm run start, yarn start, pnpm start
 
 # Check code quality
-bun run lint
+bun run lint     # or npm run lint, yarn lint, pnpm lint
 
 # Fix code issues
-bun run lint:fix
+bun run lint:fix # or npm run lint:fix, yarn lint:fix, pnpm lint:fix
 
 # Check formatting
-bun run format:check
+bun run format:check # or npm run format:check, yarn format:check, pnpm format:check
 
 # Auto-format code
-bun run format
+bun run format   # or npm run format, yarn format, pnpm format
 ```
 
 ## Code Quality
