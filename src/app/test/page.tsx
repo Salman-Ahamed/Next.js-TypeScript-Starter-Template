@@ -5,6 +5,6 @@ export const TestPage = () => {
   return <NewPage title="Test Page!" />;
 };
 
-// export function test() {
-//   console.log("second");
-// }
+export function test() {
+  console.log("second");
+}
