@@ -1,10 +1,10 @@
 import { NewPage } from "@/components/layout";
 
 export const TestPage = () => {
-  console.log("first");
   return <NewPage title="Test Page!" />;
 };
 
-export function test() {
-  console.log("second");
-}
+export const test = () => {
+  // Using arrow function instead of function declaration
+  // console.log removed as per ESLint rules
+};
