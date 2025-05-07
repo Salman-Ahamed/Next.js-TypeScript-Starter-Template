@@ -35,7 +35,29 @@ Welcome to the Next.js TypeScript Starter Template! We're happy you want to help
    pnpm install
    ```
 
-3. Start the development server:
+3. Initialize Husky (required for git hooks):
+
+   ```bash
+   # Using Bun (Recommended)
+   bunx husky init
+
+   # Using npm
+   npx husky init
+
+   # Using yarn
+   yarn husky init
+
+   # Using pnpm
+   pnpm husky init
+   ```
+
+4. Make Husky pre-commit hook executable:
+
+   ```bash
+   chmod +x .husky/pre-commit
+   ```
+
+5. Start the development server:
 
    ```bash
    # Using Bun (Recommended)
