@@ -102,6 +102,7 @@ const eslintConfig = [
         },
       ],
       "no-restricted-syntax": ["error", "FunctionDeclaration", "FunctionExpression"],
+      "no-console": ["warn", { allow: ["warn", "error"] }],
     },
   },
 ];
