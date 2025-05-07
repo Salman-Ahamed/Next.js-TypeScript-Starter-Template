@@ -14,6 +14,19 @@
     "lint": "next lint",
     "prepare": "husky"
   },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{css,scss}": [
+      "stylelint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ]
+  },
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -31,6 +44,8 @@
     "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.6.11",
+    "stylelint": "^16.19.1",
+    "stylelint-config-standard": "^38.0.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
