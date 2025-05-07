@@ -60,29 +60,7 @@ Use this template to start new projects:
    pnpm install
    ```
 
-3. Initialize Husky (required for git hooks):
-
-   ```bash
-   # Using Bun (Recommended)
-   bunx husky init
-
-   # Using npm
-   npx husky init
-
-   # Using yarn
-   yarn husky init
-
-   # Using pnpm
-   pnpm husky init
-   ```
-
-4. Make Husky pre-commit hook executable:
-
-   ```bash
-   chmod +x .husky/pre-commit
-   ```
-
-5. Start development:
+3. Start development:
 
    ```bash
    # Using Bun (Recommended)
