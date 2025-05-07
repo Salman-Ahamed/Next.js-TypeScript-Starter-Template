@@ -9,5 +9,6 @@
   "jsxSingleQuote": false,
   "bracketSpacing": true,
   "arrowParens": "always",
-  "semi": true
+  "semi": true,
+  "endOfLine": "lf"
 }
