@@ -2,12 +2,12 @@
   "tailwindAttributes": ["class", "className", "cnObj", "myClass", "customClass"],
   "tailwindFunctions": ["clsx", "tw", "cva", "cn"],
   "plugins": ["prettier-plugin-tailwindcss"],
-  "trailingComma": "all",
+  "trailingComma": "es5",
   "tabWidth": 2,
-  "semi": true,
-  "singleQuote": false,
+  "useTabs": false,
   "printWidth": 100,
   "jsxSingleQuote": false,
   "bracketSpacing": true,
-  "arrowParens": "always"
+  "arrowParens": "always",
+  "semi": true
 }
