@@ -79,6 +79,88 @@ A simple starter template for Next.js projects with useful tools:
    bun run dev
    ```
 
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── (landing)/               # Landing Page Route Group (Optional)
+│   │   ├── components/          # Page-specific Components
+│   │   │   ├── HeroSection.tsx
+│   │   │   └── CTASection.tsx
+│   │   └── page.tsx             # Landing Page Entry
+│   ├── (dashboard)/             # Other Route Groups (Auth, Dashboard etc)
+│   ├── layout.tsx               # Root Layout
+│   ├── template.tsx             # Optional Template (For per-page layouts)
+│   └── providers.tsx            # Global Context Providers
+│
+├── components/
+│   ├── ui/                      # Reusable UI Primitives (ShadCN/ui Style)
+│   │   ├── button.tsx
+│   │   ├── card.tsx
+│   │   └── ...
+│   ├── layout/                  # Layout Components
+│   │   ├── header.tsx
+│   │   ├── footer.tsx
+│   │   └── ...
+│   └── shared/                  # Cross-Cutting Components
+│       ├── ThemeToggle.tsx
+│       └── Analytics.tsx
+│
+├── config/                      # App Configuration
+│   ├── site.ts                  # Site Metadata
+│   ├── routes.ts                # Route Configurations
+│   └── theme.ts                 # Design System Config
+│
+├── hooks/                       # Custom React Hooks
+│   ├── useDebounce.ts
+│   └── useLocalStorage.ts
+│
+├── lib/
+│   ├── api/                     # API Clients
+│   │   ├── axios.ts
+│   │   └── trpc/
+│   ├── utils/                   # Utility Functions
+│   │   ├── formatter.ts
+│   │   └── validators.ts
+│   └── constants.ts             # App Constants
+│
+├── styles/
+│   ├── globals.css              # Global CSS
+│   ├── theme/                   # CSS Variables & Design Tokens
+│   └── tailwind.css             # Tailwind Directives
+│
+├── types/                       # Global Type Definitions
+│   ├── index.d.ts
+│   ├── next.d.ts                # Next.js Type Extensions
+│   └── custom-types.ts
+│
+├── public/
+│   └── assets/                  # Static Assets
+│       ├── images/
+│       └── fonts/
+│
+├── services/                    # Business Logic Layer
+│   ├── auth.service.ts
+│   └── analytics.service.ts
+│
+├── contexts/                    # React Contexts
+│   ├── ThemeContext.tsx
+│   └── AuthContext.tsx
+│
+├── hooks/                       # Custom Hooks
+│   ├── useAuth.ts
+│   └── useAnalytics.ts
+│
+├── icons/                       # SVG Icon Components
+│   ├── BrandIcon.tsx
+│   └── SocialIcons/
+│
+└── __tests__/                   # Test Directory
+    ├── components/
+    └── utils/
+```
+
 ## Useful Commands
 
 Run these commands in your project folder:
@@ -154,17 +236,3 @@ Read our [CONTRIBUTING GUIDE](CONTRIBUTING.md) to help improve this project.
 ## License
 
 Free to use under [MIT License](LICENSE). See LICENSE file for details.
-
-```
-
-Key improvements for simplicity:
-1. Short sentences and common words
-2. Removed technical jargon
-3. Clear section headings
-4. Simple explanations of tools
-5. Easy-to-follow steps
-6. Visual badges kept for quick understanding
-7. Friendly formatting
-
-This version is suitable for both new developers while keeping all important technical information.
-```
