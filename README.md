@@ -27,26 +27,20 @@ A simple starter template for Next.js projects with useful tools:
 
 ## How to Start
 
-### Option 1: Use the CLI **`(Recommended)`**
+### Option 1: Create with CLI **`(Recommended)`**
 
-Create your Next.js TypeScript project in seconds using our CLI tool. Choose your preferred package manager:
+Quickly set up your Next.js + TypeScript + Tailwindcss project using the CLI tool:
 
-- **Recommended (Bun) 🌟**
+- **📦 using npm**
   ```bash
-  bunx next-ts-app
+  npx next-ts-app my-awesome-app
   ```
-- **npm 📦**
-  ```bash
-  npx next-ts-app
-  ```
-- **yarn 🧶**
-  ```bash
-  yarn create next-ts-app
-  ```
-- **pnpm ⚡**
-  ```bash
-  pnpm dlx next-ts-app
-  ```
+- Replace my-awesome-app with your desired project name.
+- The CLI will scaffold a fully configured Next.js + TypeScript + Tailwindcss starter for you.
+
+### ✅ Fast  |  🔧 Pre-configured  |  🧪 Ready for development
+
+---
 
 #### CLI Options
 
@@ -69,11 +63,11 @@ During project creation, you'll be prompted to:
    bun run dev
    ```
 
-   **Note**: If you pick `bun`, make sure Bun is installed (visit [bun.sh](https://bun.sh)). For `pnpm` or `yarn`, install them first if needed.
+   **Note**: If you pick `bun`, make sure Bun is installed (`npm install -g bun` or visit [bun.sh](https://bun.sh)). For `pnpm` or `yarn`, install them first if needed.
 
 #### Prerequisites
 
-- For **Bun**: Install from [bun.sh](https://bun.sh)
+- For **Bun**: Install via `npm install -g bun`
 - For **pnpm**: Install via `npm install -g pnpm`
 - For **Yarn**: Install via `npm install -g yarn`
 - For **npm**: Comes with Node.js
@@ -186,43 +180,17 @@ src/
     └── utils/
 ```
 
-## Useful Commands
+## Code Quality Tools
 
-Run these commands in your project folder:
+These tools keep your code neat:
 
-```bash
-# Start the development server
-bun run dev
+- **ESLint**: Finds code mistakes.
+- **Prettier**: Formats code nicely.
+- **Tailwind CSS**: Organizes styles.
+- **Husky**: Checks code before commits.
+- **lint-staged**: Runs checks on changed files.
 
-# Build for production
-bun run build
-
-# Check code for errors
-bun run lint
-
-# Fix code errors automatically
-bun run lint:fix
-
-# Check code formatting
-bun run format:check
-
-# Format code automatically
-bun run format
-```
-
-## Code Quality
-
-### Automatic Checks
-
-We use these tools to keep code clean:
-
-- **ESLint** finds code issues
-- **Prettier** formats code
-- **Tailwind CSS** sorting
-- **Husky** enforces pre-commit checks
-- **lint-staged** runs checks on staged files
-
-Example import rules:
+Example rule for imports:
 
 ```javascript
 "import/order": [
@@ -234,30 +202,21 @@ Example import rules:
 ]
 ```
 
-### Formatting Rules
+## Deployment
 
-Our formatting setup helps with:
-
-- Clean code structure
-- Proper Tailwind CSS class order
-- Consistent styling
-- Pre-commit quality checks
-
-## Deployment Ready
-
-Works with popular platforms:
+This template works with:
 
 - Vercel
 - Netlify
 - AWS
 - Docker
 
-Create `.env` file from `.env.example` for production settings.
+Copy `.env.example` to `.env` for production settings.
 
-## How to Contribute
+## Want to Help?
 
-Read our [CONTRIBUTING GUIDE](CONTRIBUTING.md) to help improve this project.
+Check our [CONTRIBUTING GUIDE](CONTRIBUTING.md) to contribute.
 
 ## License
 
-Free to use under [MIT License](LICENSE). See LICENSE file for details.
+Free to use under [MIT License](LICENSE). See the LICENSE file for details.
