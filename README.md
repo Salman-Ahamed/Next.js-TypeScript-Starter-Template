@@ -27,7 +27,7 @@ A simple starter template for Next.js projects with useful tools:
 
 ## How to Start
 
-### Option 1: Use the CLI (Recommended)
+### Option 1: Use the CLI **`(Recommended)`**
 
 1. Create a new project with any of these commands:
 
