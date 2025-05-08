@@ -1,3 +1,5 @@
+import { NextPage } from "next";
+
 import {
   CTASection,
   FeatureGrid,
@@ -8,7 +10,7 @@ import {
   TerminalSection,
 } from "@/components/landing-page";
 
-const Home = () => {
+const Home: NextPage = () => {
   return (
     <div className="min-h-screen overflow-hidden bg-gray-950 text-gray-100">
       <div className="pointer-events-none fixed inset-0 overflow-hidden">
@@ -25,4 +27,5 @@ const Home = () => {
     </div>
   );
 };
+
 export default Home;

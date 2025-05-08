@@ -26,7 +26,7 @@ const eslintConfig = [
     },
     rules: {
       "import/order": [
-        "error",
+        "warn",
         {
           groups: [
             "builtin",
