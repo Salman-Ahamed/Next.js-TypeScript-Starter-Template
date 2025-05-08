@@ -29,7 +29,7 @@ A simple starter template for Next.js projects with useful tools:
 
 ### Option 1: Use the CLI **`(Recommended)`**
 
-1. Create a new project with any of these commands:
+Create your Next.js TypeScript project in seconds using our CLI tool. Choose your preferred package manager:
 
 - **Recommended (Bun) 🌟**
   ```bash
@@ -48,10 +48,17 @@ A simple starter template for Next.js projects with useful tools:
   pnpm dlx next-ts-app
   ```
 
-2. Answer these questions:
+#### CLI Options
 
-   - Enter your project name (e.g., `my-project`).
-   - Choose a package manager (`bun`, `pnpm`, `yarn`, or `npm`).
+During project creation, you'll be prompted to:
+
+1. **Project Name**: Enter a name for your project (e.g., `my-awesome-app`)
+2. **Package Manager**: Choose your preferred package manager:
+
+   - `bun` (Recommended for speed)
+   - `npm` (Most common)
+   - `yarn` (Alternative to npm)
+   - `pnpm` (Fast, disk-space efficient)
 
 3. Follow the steps shown:
    For example, if you choose `bun`:
@@ -63,6 +70,24 @@ A simple starter template for Next.js projects with useful tools:
    ```
 
    **Note**: If you pick `bun`, make sure Bun is installed (visit [bun.sh](https://bun.sh)). For `pnpm` or `yarn`, install them first if needed.
+
+#### Prerequisites
+
+- For **Bun**: Install from [bun.sh](https://bun.sh)
+- For **pnpm**: Install via `npm install -g pnpm`
+- For **Yarn**: Install via `npm install -g yarn`
+- For **npm**: Comes with Node.js
+
+#### What's Included
+
+After installation, you'll get:
+
+- ✅ Next.js 15 with App Router
+- ✅ TypeScript configuration
+- ✅ Tailwind CSS setup
+- ✅ ESLint & Prettier
+- ✅ Git hooks with Husky
+- ✅ Project structure ready to go
 
 ### Option 2: Use GitHub Template
 
