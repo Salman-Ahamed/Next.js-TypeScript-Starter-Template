@@ -36,7 +36,7 @@ export const features = [
 ];
 
 export const terminalCommands = [
-  { command: "bunx next-ts-app", description: "Scaffold new project" },
+  { command: "npx next-ts-app my-awesome-app", description: "Scaffold new project" },
   { command: "bun install", description: "Install dependencies" },
   { command: "bun run dev", description: "Start dev server" },
   { command: "bun run build", description: "Production build" },
