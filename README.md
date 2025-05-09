@@ -58,7 +58,7 @@ During project creation, you'll be prompted to:
    For example, if you choose `bun`:
 
    ```bash
-   cd my-project
+   cd my-awesome-project
    bun install
    bun run dev
    ```
@@ -212,6 +212,16 @@ This template works with:
 - Docker
 
 Copy `.env.example` to `.env` for production settings.
+
+## Developer & Contributor
+
+<div align="center"> <table> <tr> <td align="center">
+<img src="https://github.com/Salman-Ahamed.png" width="80" height="80" alt="Salman Ahamed" /><br /> <b>Salman Ahamed</b><br/> <a href="https://github.com/Salman-Ahamed">GitHub</a> | <a href="https://www.linkedin.com/in/salman-ahamad-as/">LinkedIn</a> | <a href="mailto:shahriyar.hosen.dev@gmail.com">Email</a> </td> <td align="center">
+<img src="https://github.com/eyachirarafat.png" width="80" height="80" alt="Eyachir Arafat" /><br /> <b>Eyachir Arafat</b><br/> <a href="https://github.com/eyachirarafat">GitHub</a> | <a href="https://www.linkedin.com/in/eyachirarafat/">LinkedIn</a> | <a href="https://eyachirarafat.vercel.app/">Portfolio</a> </td> <td align="center">
+<img src="https://github.com/mdamzadhossainomor.png" width="80" height="80" alt="Md Amzad Hossain Omor" /><br /> <b>Md Amzad Hossain</b><br/> <a href="https://github.com/mdamzadhossainomor">GitHub</a> | <a href="https://www.linkedin.com/in/md-amzad-hossain-omor/">LinkedIn</a> | <a href="mailto:mdamzadhossainomor@gmail.com">Email</a> </td> <td align="center">
+<img src="https://github.com/Hashibul-Alam.png" width="80" height="80" alt="Hasibul Alam" /><br /> <b>Hasibul Alam</b><br/> <a href="https://github.com/Hashibul-Alam">GitHub</a> | <a href="https://www.linkedin.com/in/hasibul231/">LinkedIn</a> | <a href="mailto:sha31417@gmail.com">Email</a> </td> </tr> </table> </div>
+
+---
 
 ## Want to Help?
 
