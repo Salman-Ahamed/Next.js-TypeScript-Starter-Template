@@ -1,15 +1,29 @@
+"use client";
 import Link from "next/link";
+
+import { useEffect, useState } from "react";
 
 import { GitHubIcon, TerminalIcon } from "@/icons";
 
 export const HeroSection = () => {
+  const [version, setVersion] = useState<string | null>(null);
+
+  useEffect(() => {
+    fetch("https://registry.npmjs.org/next-ts-app/latest")
+      .then((res) => res.json())
+      .then((data) => setVersion(data.version));
+    //   .catch((err) => console.error("Failed to fetch version:", err));
+  }, []);
+
   return (
     <section className="relative z-10 pt-36 pb-[93.4px]">
       <div className="container mx-auto px-6">
         <div className="mx-auto max-w-3xl text-center">
-          <span className="mb-6 inline-block rounded-full border border-gray-700/50 bg-gray-800/50 px-4 py-2 text-sm font-medium text-indigo-400 backdrop-blur-sm">
-            VERSION 1.2.35 RELEASED
-          </span>
+          {version && (
+            <span className="mb-6 inline-block rounded-full border border-gray-700/50 bg-gray-800/50 px-4 py-2 text-sm font-medium text-indigo-400 backdrop-blur-sm">
+              VERSION {version} RELEASED
+            </span>
+          )}
           <h1 className="mb-6 bg-[linear-gradient(to_right,theme(colors.gray.100),theme(colors.gray.300))] bg-clip-text text-5xl font-bold text-transparent md:text-6xl">
             The Ultimate <span className="text-indigo-400">Next.js</span> Template
           </h1>

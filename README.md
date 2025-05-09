@@ -1,12 +1,20 @@
 # Next.js TypeScript Starter Template
 
-[![Next.js](https://img.shields.io/badge/Next.js-15.3.1-black?logo=next.js)](https://nextjs.org/)
-[![Bun](https://img.shields.io/badge/Bun-1.0.0-ff69b4?logo=bun)](https://bun.sh/)
-[![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
+<p align="center">
+  <img
+    src="https://img.shields.io/npm/v/next-ts-app?style=for-the-badge&label=next-ts-app&labelColor=black&logo=npm&color=success"
+    alt="next-ts-app version"
+  />
+  <img
+    src="https://img.shields.io/static/v1?label=License&message=MIT&labelColor=000000&color=007ACC&style=for-the-badge&logo=open-source-initiative&logoColor=white"
+    alt="License MIT"
+  />
+</p>
 
 A simple starter template for Next.js projects with useful tools:
 
 <p align="center">
+<img src="https://img.shields.io/badge/Next.js-15.3.1-black?logo=next.js" alt="Nextjs">
   <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" alt="TypeScript">
   <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwind-css&logoColor=white" alt="Tailwind CSS">
   <img src="https://img.shields.io/badge/ESLint-4B32C3?logo=eslint&logoColor=white" alt="ESLint">
