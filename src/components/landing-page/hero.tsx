@@ -7,13 +7,19 @@ import { GitHubIcon, TerminalIcon } from "@/icons";
 
 export const HeroSection = () => {
   const [version, setVersion] = useState<string | null>(null);
+  const [copied, setCopied] = useState(false);
 
   useEffect(() => {
     fetch("https://registry.npmjs.org/next-ts-app/latest")
       .then((res) => res.json())
       .then((data) => setVersion(data.version));
-    //   .catch((err) => console.error("Failed to fetch version:", err));
   }, []);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText("npx next-ts-app my-awesome-app");
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   return (
     <section className="relative z-10 pt-36 pb-[93.4px]">
@@ -31,6 +37,20 @@ export const HeroSection = () => {
             Everything you need to build modern, performant web applications with TypeScript and
             Bun.
           </p>
+
+          <div className="mb-10 flex items-center justify-center">
+            <div className="group relative flex items-center overflow-hidden rounded-lg border border-gray-700/50 bg-gray-800/50 backdrop-blur-sm">
+              <code className="px-6 py-3.5 font-mono text-gray-100">
+                npx next-ts-app my-awesome-app
+              </code>
+              <button
+                onClick={handleCopy}
+                className="h-full cursor-pointer bg-gray-700/50 px-4 py-4 text-sm font-medium text-indigo-400 transition-all hover:bg-gray-600/50"
+              >
+                {copied ? "Copied!" : "Copy"}
+              </button>
+            </div>
+          </div>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="https://www.npmjs.com/package/next-ts-app"

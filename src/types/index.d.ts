@@ -13,3 +13,26 @@ declare interface ICallbackUrl {
 }
 
 declare interface IClassNameWithChildren extends IChildren, IClassName {}
+
+export interface IFooterLinks {
+  quickLinks: {
+    id: number;
+    name: string;
+    path: string;
+  }[];
+  resources: {
+    id: number;
+    name: string;
+    path: string;
+  }[];
+  contact: {
+    id: number;
+    name: string;
+    path: string;
+  }[];
+  privacy: {
+    id: number;
+    name: string;
+    path: string;
+  }[];
+}

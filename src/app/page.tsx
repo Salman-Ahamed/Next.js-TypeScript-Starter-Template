@@ -9,6 +9,7 @@ import {
   TeamMembers,
   TerminalSection,
 } from "@/components/landing-page";
+import { Footer } from "@/components/landing-page/footer";
 
 const Home: NextPage = () => {
   return (
@@ -24,6 +25,7 @@ const Home: NextPage = () => {
       <TerminalSection />
       <TeamMembers />
       <CTASection />
+      <Footer />
     </div>
   );
 };
