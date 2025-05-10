@@ -18,6 +18,20 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   {
+    ignores: [
+      "**/.next/**",
+      "**/node_modules/**",
+      "**/out/**",
+      "**/build/**",
+      "**/dist/**",
+      ".next/**",
+      "node_modules/**",
+      "out/**",
+      "build/**",
+      "dist/**",
+    ],
+  },
+  {
     files: ["**/*.{js,jsx,ts,tsx}"],
     plugins: {
       "@typescript-eslint": tsPlugin,
@@ -36,7 +50,6 @@ const eslintConfig = [
       "no-console": ["error", { allow: ["warn", "error"] }],
       "no-restricted-syntax": "off",
     },
-    ignores: [".next/**/*", "node_modules/**/*", "out/**/*", "build/**/*", "dist/**/*"],
   },
 
   ...compat.extends("next/core-web-vitals", "plugin:@typescript-eslint/recommended"),
