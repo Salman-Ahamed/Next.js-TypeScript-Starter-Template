@@ -21,13 +21,7 @@ const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "plugin:@typescript-eslint/recommended"),
   {
     plugins: { import: importPlugin },
-    settings: {
-      "import/resolver": {
-        typescript: {
-          project: "./tsconfig.json",
-        },
-      },
-    },
+    settings: { "import/resolver": { typescript: { project: "./tsconfig.json" } } },
     rules: {
       "import/order": [
         "warn",
@@ -44,58 +38,23 @@ const eslintConfig = [
           ],
           pathGroups: [
             // External packages
-            {
-              pattern: "next/**",
-              group: "external",
-              position: "before",
-            },
+            { pattern: "next/**", group: "external", position: "before" },
 
             // Aliased internal folders (grouped as internal)
-            {
-              pattern: "@/app/**",
-              group: "internal",
-              position: "before",
-            },
-            {
-              pattern: "@/components/common/**",
-              group: "internal",
-              position: "before",
-            },
-            {
-              pattern: "@/components/**",
-              group: "internal",
-              position: "before",
-            },
-            {
-              pattern: "@/hooks/**",
-              group: "internal",
-              position: "before",
-            },
-            {
-              pattern: "@/lib/**",
-              group: "internal",
-              position: "before",
-            },
-            {
-              pattern: "@/types/**",
-              group: "type",
-              position: "before",
-            },
+            { pattern: "@/app/**", group: "internal", position: "before" },
+            { pattern: "@/components/**", group: "internal", position: "before" },
+            { pattern: "@/hooks/**", group: "internal", position: "before" },
+            { pattern: "@/lib/**", group: "internal", position: "before" },
+            { pattern: "@/types/**", group: "type", position: "before" },
           ],
           pathGroupsExcludedImportTypes: ["builtin"],
           "newlines-between": "always",
-          alphabetize: {
-            order: "asc",
-            caseInsensitive: true,
-          },
+          alphabetize: { order: "asc", caseInsensitive: true },
         },
       ],
       "react/function-component-definition": [
         "error",
-        {
-          namedComponents: "arrow-function",
-          unnamedComponents: "arrow-function",
-        },
+        { namedComponents: "arrow-function", unnamedComponents: "arrow-function" },
       ],
       "@typescript-eslint/no-unused-vars": [
         "error",
