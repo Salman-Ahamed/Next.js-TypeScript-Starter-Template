@@ -1,9 +1,8 @@
 "use client";
 import Link from "next/link";
-
 import { useEffect, useState } from "react";
 
-import { GitHubIcon, TerminalIcon } from "@/icons";
+import { GitHubIcon, TerminalIcon } from "@/components/icons";
 
 export const HeroSection = () => {
   const [version, setVersion] = useState<string | null>(null);

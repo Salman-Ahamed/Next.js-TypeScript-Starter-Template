@@ -1,4 +1,4 @@
-import { terminalCommands } from "@/lib";
+import { terminalCommands } from "@/lib/db";
 
 type TProps = {
   commands: { command: string; description: string }[];

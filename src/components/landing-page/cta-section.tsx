@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { RocketIcon } from "@/icons";
+import { RocketIcon } from "@/components/icons";
 
 export const CTASection = () => {
   return (

@@ -1,7 +1,8 @@
 import Image from "next/image";
 
-import { GitHubIcon, LinkedInIcon, MailIcon } from "@/icons";
-import { teamMembers } from "@/lib";
+import { GitHubIcon, LinkedInIcon, MailIcon } from "@/components/icons";
+
+import { teamMembers } from "@/lib/db";
 
 type TProps = {
   member: {

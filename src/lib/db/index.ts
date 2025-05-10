@@ -8,9 +8,9 @@ import {
   LockIcon,
   MailIcon,
   ZapIcon,
-} from "@/icons";
+} from "@/components/icons";
 
-import { IFooterLinks } from "@/types/data";
+import { FooterLinks } from "@/types/data";
 
 export const features = [
   {
@@ -106,7 +106,7 @@ export const teamMembers = [
   },
 ];
 
-export const footerLinks: IFooterLinks = {
+export const footerLinks: FooterLinks = {
   quickLinks: [
     {
       id: 1,

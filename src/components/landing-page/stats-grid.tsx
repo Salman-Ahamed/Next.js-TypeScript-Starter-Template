@@ -1,4 +1,4 @@
-import { CheckIcon, GlobeIcon, UserIcon, ZapIcon } from "@/icons";
+import { CheckIcon, GlobeIcon, UserIcon, ZapIcon } from "@/components/icons";
 
 export const StatsGrid = () => (
   <section className="relative z-10">

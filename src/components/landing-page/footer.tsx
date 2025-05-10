@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 
-import { footerLinks } from "@/lib";
+import { footerLinks } from "@/lib/db";
 
 export const Footer = () => {
   const { quickLinks, resources, contact, privacy } = footerLinks;

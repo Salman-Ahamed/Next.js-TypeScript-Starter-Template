@@ -1,4 +1,4 @@
-import { features } from "@/lib";
+import { features } from "@/lib/db";
 
 import { GlowCard } from "./glow-card";
 

@@ -1,9 +1,11 @@
+import { FC } from "react";
+
 import { IconSvgProps } from "@/types/common";
 
-export const GitHubIcon = (props: IconSvgProps) => (
+export const GitHubIcon: FC<IconSvgProps> = ({ width = 28, height = 28, ...props }) => (
   <svg
-    width="28"
-    height="28"
+    width={width}
+    height={height}
     viewBox="0 0 32 32"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -16,10 +18,10 @@ export const GitHubIcon = (props: IconSvgProps) => (
   </svg>
 );
 
-export const LinkedInIcon = (props: IconSvgProps) => (
+export const LinkedInIcon: FC<IconSvgProps> = ({ width = 24, height = 24, ...props }) => (
   <svg
-    width="24"
-    height="24"
+    width={width}
+    height={height}
     viewBox="0 0 32 32"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -32,11 +34,11 @@ export const LinkedInIcon = (props: IconSvgProps) => (
   </svg>
 );
 
-export const MailIcon = (props: IconSvgProps) => (
+export const MailIcon: FC<IconSvgProps> = ({ width = 24, height = 24, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
+    width={width}
+    height={height}
     fill="none"
     stroke="currentColor"
     viewBox="0 0 24 24"
@@ -51,11 +53,11 @@ export const MailIcon = (props: IconSvgProps) => (
   </svg>
 );
 
-export const TerminalIcon = (props: IconSvgProps) => (
+export const TerminalIcon: FC<IconSvgProps> = ({ width = 24, height = 24, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
+    width={width}
+    height={height}
     fill="none"
     {...props}
     viewBox="0 0 16 16"
@@ -67,25 +69,25 @@ export const TerminalIcon = (props: IconSvgProps) => (
   </svg>
 );
 
-export const CheckIcon = (props: IconSvgProps) => (
+export const CheckIcon: FC<IconSvgProps> = ({ width = 24, height = 24, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
+    width={width}
+    height={height}
     {...props}
-    width="24"
-    height="24"
   >
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
   </svg>
 );
 
-export const ZapIcon = (props: IconSvgProps) => (
+export const ZapIcon: FC<IconSvgProps> = ({ width = 24, height = 24, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
+    width={width}
+    height={height}
     fill="none"
     viewBox="0 0 24 24"
     {...props}
@@ -99,11 +101,11 @@ export const ZapIcon = (props: IconSvgProps) => (
   </svg>
 );
 
-export const GlobeIcon = (props: IconSvgProps) => (
+export const GlobeIcon: FC<IconSvgProps> = ({ width = 24, height = 24, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
+    width={width}
+    height={height}
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
@@ -118,11 +120,11 @@ export const GlobeIcon = (props: IconSvgProps) => (
   </svg>
 );
 
-export const UserIcon = (props: IconSvgProps) => (
+export const UserIcon: FC<IconSvgProps> = ({ width = 24, height = 24, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
+    width={width}
+    height={height}
     fill="none"
     viewBox="0 0 24 24"
     {...props}
@@ -137,11 +139,11 @@ export const UserIcon = (props: IconSvgProps) => (
   </svg>
 );
 
-export const CodeIcon = (props: IconSvgProps) => (
+export const CodeIcon: FC<IconSvgProps> = ({ width = 24, height = 24, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
+    width={width}
+    height={height}
     fill="none"
     viewBox="0 0 24 24"
     {...props}
@@ -156,11 +158,11 @@ export const CodeIcon = (props: IconSvgProps) => (
   </svg>
 );
 
-export const LockIcon = (props: IconSvgProps) => (
+export const LockIcon: FC<IconSvgProps> = ({ width = 24, height = 24, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
+    width={width}
+    height={height}
     fill="none"
     viewBox="0 0 24 24"
     {...props}
@@ -174,11 +176,12 @@ export const LockIcon = (props: IconSvgProps) => (
     />
   </svg>
 );
-export const LayerIcon = (props: IconSvgProps) => (
+
+export const LayerIcon: FC<IconSvgProps> = ({ width = 24, height = 24, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
+    width={width}
+    height={height}
     fill="none"
     viewBox="0 0 24 24"
     {...props}
@@ -192,11 +195,12 @@ export const LayerIcon = (props: IconSvgProps) => (
     />
   </svg>
 );
-export const CPUIcon = (props: IconSvgProps) => (
+
+export const CPUIcon: FC<IconSvgProps> = ({ width = 24, height = 24, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
+    width={width}
+    height={height}
     fill="none"
     viewBox="0 0 24 24"
     {...props}
@@ -210,11 +214,11 @@ export const CPUIcon = (props: IconSvgProps) => (
   </svg>
 );
 
-export const RocketIcon = (props: IconSvgProps) => (
+export const RocketIcon: FC<IconSvgProps> = ({ width = 24, height = 24, ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
+    width={width}
+    height={height}
     fill="none"
     viewBox="0 0 24 24"
     {...props}

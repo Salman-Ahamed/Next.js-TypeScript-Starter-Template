@@ -71,15 +71,14 @@ const eslintConfig = [
             "type",
           ],
           pathGroups: [
-            // External packages
-            { pattern: "next/**", group: "external", position: "before" },
-
-            // Aliased internal folders (grouped as internal)
+            // App and Components group
             { pattern: "@/app/**", group: "internal", position: "before" },
             { pattern: "@/components/**", group: "internal", position: "before" },
+            // Other internal folders group
             { pattern: "@/hooks/**", group: "internal", position: "before" },
             { pattern: "@/lib/**", group: "internal", position: "before" },
             { pattern: "@/styles/**", group: "internal", position: "before" },
+            // Types group
             { pattern: "@/types/**", group: "type", position: "before" },
           ],
           pathGroupsExcludedImportTypes: ["builtin"],

@@ -1,23 +1,11 @@
-export interface IFooterLinks {
-  quickLinks: {
-    id: number;
-    name: string;
-    path: string;
-  }[];
-  resources: {
-    id: number;
-    name: string;
-    path: string;
-  }[];
-  contact: {
-    id: number;
-    name: string;
-    Icon: JSX.Element;
-    path: string;
-  }[];
-  privacy: {
-    id: number;
-    name: string;
-    path: string;
-  }[];
+import { IconSvgProps } from "./common";
+
+type Link = { id: number; name: string; path: string };
+type ContactLink = Link & { Icon: React.ComponentType<IconSvgProps> };
+
+export interface FooterLinks {
+  quickLinks: Link[];
+  resources: Link[];
+  contact: ContactLink[];
+  privacy: Link[];
 }
