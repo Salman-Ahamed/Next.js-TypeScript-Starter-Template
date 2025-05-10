@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 
 import { RocketIcon } from "@/components/icons";
@@ -5,9 +6,12 @@ import { RocketIcon } from "@/components/icons";
 export const CTASection = () => {
   return (
     <section className="relative overflow-hidden border-t border-gray-800/50 bg-gradient-to-br from-gray-900/50 to-gray-950/80 py-32">
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:40px_40px]" />
       <div className="relative z-10 container mx-auto px-6">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="mb-6 text-4xl font-bold">Ready to Build the Future?</h2>
+          <h2 className="mb-6 bg-gradient-to-r from-gray-100 to-gray-300 bg-clip-text text-4xl font-bold text-transparent">
+            Ready to Build the Future?
+          </h2>
           <p className="mb-10 text-xl text-gray-400">
             Start your project with enterprise-grade tooling and architecture.
           </p>

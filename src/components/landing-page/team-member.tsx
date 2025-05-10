@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 import { GitHubIcon, LinkedInIcon, MailIcon } from "@/components/icons";
@@ -20,19 +22,19 @@ type TProps = {
 
 export const TeamMember = ({ member }: TProps) => {
   return (
-    <div className="group relative">
+    <div className="group relative transform transition-all duration-300 hover:-translate-y-1">
       <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 opacity-0 blur-sm transition-all duration-300 group-hover:opacity-20 group-hover:blur-none" />
       <div className="absolute -inset-0.5 rounded-lg bg-gradient-to-r from-indigo-600/30 to-purple-600/30 opacity-0 transition-all duration-500 group-hover:opacity-100" />
 
       <div className="relative h-full rounded-xl border border-gray-800/30 bg-gradient-to-b from-gray-900/50 to-gray-900/30 p-6 backdrop-blur-sm transition-all duration-300 hover:border-gray-700/50 hover:shadow-lg hover:shadow-indigo-500/10">
-        <div className="relative mx-auto mb-4 h-24 w-24">
+        <div className="relative mx-auto mb-6 h-28 w-28">
           <div className="absolute -inset-0.5 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 opacity-0 blur-md transition-all duration-500 group-hover:opacity-70 group-hover:blur-sm" />
           <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-full border border-gray-700/50 bg-gray-800">
             <Image
               src={member.img}
               alt={member.name}
-              width={96}
-              height={96}
+              width={112}
+              height={112}
               className="transition-transform duration-300 group-hover:scale-105"
             />
           </div>
@@ -44,7 +46,7 @@ export const TeamMember = ({ member }: TProps) => {
           <p className="mb-5 text-sm leading-relaxed text-gray-400/80">{member.bio}</p>
         </div>
 
-        <div className="flex items-center justify-center space-x-2">
+        <div className="flex items-center justify-center space-x-3">
           {member.social.map((social) => (
             <a
               key={social.id}
@@ -55,7 +57,7 @@ export const TeamMember = ({ member }: TProps) => {
               aria-label={`${member.name}'s ${social.name}`}
             >
               {social.name === "Github" ? (
-                <GitHubIcon className="h-6 w-6" />
+                <GitHubIcon className="h-5 w-5" />
               ) : social.name === "Linkedin" ? (
                 <LinkedInIcon className="h-5 w-5" />
               ) : (
@@ -74,10 +76,15 @@ export const TeamMembers = () => {
     <section className="relative z-10 border-y border-gray-800/50 bg-gray-900/50 py-24">
       <div className="container mx-auto px-6">
         <div className="mx-auto mb-16 max-w-4xl text-center">
-          <h2 className="mb-4 text-3xl font-bold">Meet The Team</h2>
-          <p className="text-gray-400">The talented developers behind this project</p>
+          <h2 className="mb-4 bg-gradient-to-r from-gray-100 to-gray-300 bg-clip-text text-4xl font-bold tracking-tight text-transparent">
+            Meet Our Leadership Team
+          </h2>
+          <p className="text-lg text-gray-400">
+            Our team of experienced developers and engineers are dedicated to creating exceptional
+            developer experiences and building scalable applications that drive innovation.
+          </p>
         </div>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {teamMembers.map((member, index) => (
             <TeamMember key={index} member={member} />
           ))}
