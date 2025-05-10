@@ -1,47 +1,10 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-# Colors for better readability
-GREEN='\033[0;32m'
-RED='\033[0;31m'
-YELLOW='\033[1;33m'
-NC='\033[0m' # No Color
-
-# Function to print colored messages
-print_message() {
-    echo -e "${GREEN}🚀 $1${NC}"
-}
-
-print_error() {
-    echo -e "${RED}❌ $1${NC}"
-}
-
-print_warning() {
-    echo -e "${YELLOW}⚠️  $1${NC}"
-}
-
-# Main execution
-print_message "Starting pre-commit checks..."
-
 # Run lint-staged
-print_message "Running lint-staged checks..."
-if ! bunx lint-staged; then
-    print_error "❌ Lint-staged checks failed!"
-    exit 1
-fi
+bunx lint-staged
 
-# Additional style checks
-print_message "Running style checks..."
-if ! bunx stylelint "**/*.{css,scss}" --max-warnings 0; then
-    print_error "❌ Style checks failed! Please fix the CSS/SCSS issues."
-    exit 1
-fi
-
-# ESLint checks
-print_message "Running ESLint checks..."
-if ! bunx eslint . --max-warnings 0; then
-    print_error "❌ ESLint checks failed! Please fix the JavaScript/TypeScript issues."
-    exit 1
-fi
-
-print_message "✅ All checks passed successfully!"
+# Additional checks
+echo "Running additional style checks..."
+bunx stylelint "**/*.{css,scss}" --max-warnings 0
+bunx eslint . --max-warnings 0
