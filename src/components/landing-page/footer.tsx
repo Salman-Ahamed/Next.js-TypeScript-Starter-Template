@@ -62,9 +62,10 @@ export const Footer = () => {
                     href={link.path}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-400 transition-colors hover:text-indigo-400"
+                    className="flex items-center gap-2 text-gray-400"
                   >
-                    {link.name}
+                    <p>{<link.Icon />}</p>
+                    <span className="transition-colors hover:text-indigo-400"> {link.name}</span>
                   </Link>
                 </li>
               ))}
