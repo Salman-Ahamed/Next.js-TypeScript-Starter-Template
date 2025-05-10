@@ -8,9 +8,9 @@ import {
   LockIcon,
   MailIcon,
   ZapIcon,
-} from "@/icons";
+} from "@/components/icons";
 
-import { IFooterLinks } from "@/types/data";
+import { FooterLinks } from "@/types/data";
 
 export const features = [
   {
@@ -53,6 +53,7 @@ export const terminalCommands = [
   { command: "bun run dev", description: "Start dev server" },
   { command: "bun run build", description: "Production build" },
   { command: "bun run lint", description: "Run linter" },
+  { command: "bun run clear-cache", description: "Clear cache and reset dev environment" },
 ];
 
 export const teamMembers = [
@@ -106,7 +107,7 @@ export const teamMembers = [
   },
 ];
 
-export const footerLinks: IFooterLinks = {
+export const footerLinks: FooterLinks = {
   quickLinks: [
     {
       id: 1,

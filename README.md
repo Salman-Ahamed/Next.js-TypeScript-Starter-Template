@@ -46,7 +46,7 @@ Quickly set up your Next.js + TypeScript + TailwindCSS project using the CLI too
 - Replace my-awesome-app with your desired project name.
 - The CLI will scaffold a fully configured Next.js + TypeScript + TailwindCSS starter for you.
 
-### ✅ Fast  |  🔧 Pre-configured  |  🧪 Ready for development
+### ✅ Fast | 🔧 Pre-configured | 🧪 Ready for development
 
 ---
 
@@ -72,6 +72,28 @@ During project creation, you'll be prompted to:
    ```
 
    **Note**: If you pick `bun`, make sure Bun is installed (`npm install -g bun` or visit [bun.sh](https://bun.sh)). For `pnpm` or `yarn`, install them first if needed.
+
+#### Available Scripts
+
+The project includes several useful scripts:
+
+```bash
+# Development
+bun run dev          # Start development server with Turbopack
+bun run build        # Create production build
+bun run start        # Start production server
+bun run lint         # Run ESLint
+bun run lint:fix     # Fix ESLint errors
+bun run format       # Format code with Prettier
+bun run format:check # Check code formatting
+bun run clear-cache  # Clear Next.js cache, reinstall dependencies, and restart dev server
+```
+
+The `clear-cache` script is particularly useful when you encounter build issues or need to reset your development environment. It:
+
+1. Removes the `.next` directory
+2. Reinstalls dependencies without using cache
+3. Restarts the development server
 
 #### Prerequisites
 
@@ -109,83 +131,97 @@ After installation, you'll get:
 ## Project Structure
 
 ```
-src/
-├── app/
-│   ├── (landing)/               # Landing Page Route Group (Optional)
-│   │   ├── components/          # Page-specific Components
-│   │   │   ├── HeroSection.tsx
-│   │   │   └── CTASection.tsx
-│   │   └── page.tsx             # Landing Page Entry
-│   ├── (dashboard)/             # Other Route Groups (Auth, Dashboard etc)
-│   ├── layout.tsx               # Root Layout
-│   ├── template.tsx             # Optional Template (For per-page layouts)
-│   └── providers.tsx            # Global Context Providers
+public/                      # Public static assets that are served directly
+├── assets/                  # Static assets directory
+│   ├── images/             # Image files (png, jpg, svg, etc.)
+│   └── data/               # Static JSON data files
 │
-├── components/
-│   ├── ui/                      # Reusable UI Primitives (ShadCN/ui Style)
-│   │   ├── button.tsx
-│   │   ├── card.tsx
-│   │   └── ...
-│   ├── layout/                  # Layout Components
-│   │   ├── header.tsx
-│   │   ├── footer.tsx
-│   │   └── ...
-│   └── shared/                  # Cross-Cutting Components
-│       ├── ThemeToggle.tsx
-│       └── Analytics.tsx
+src/                        # Source code directory
+├── app/                    # Next.js 13+ App Router directory
+│   ├── (landing)/         # Landing page route group (optional)
+│   │   ├── _components/    # Page-specific components
+│   │   ├── error.tsx      # Error boundary for landing page
+│   │   ├── loading.tsx    # Loading state for landing page
+│   │   └── page.tsx       # Landing page entry point
+│   │
+│   ├── (dashboard)/       # Dashboard route group
+│   │   ├── _components/    # Dashboard-specific components
+│   │   ├── error.tsx      # Error boundary for dashboard
+│   │   ├── loading.tsx    # Loading state for dashboard
+│   │   └── page.tsx       # Dashboard page entry
+│   │
+│   ├── layout.tsx         # Root layout (shared across all pages)
+│   ├── template.tsx       # Template for per-page layouts
+│   └── providers.tsx      # Global context providers (Theme, Auth, etc.)
 │
-├── config/                      # App Configuration
-│   ├── site.ts                  # Site Metadata
-│   ├── routes.ts                # Route Configurations
-│   └── theme.ts                 # Design System Config
+├── components/            # Reusable components directory
+│   ├── ui/               # UI primitives (buttons, inputs, cards)
+│   │   ├── button.tsx    # Button component
+│   │   ├── input.tsx     # Input component
+│   │   └── card.tsx      # Card component
+│   │
+│   ├── layout/           # Layout components
+│   │   ├── header.tsx    # Header component
+│   │   ├── footer.tsx    # Footer component
+│   │   └── sidebar.tsx   # Sidebar component
+│   │
+│   ├── shared/           # Shared components across features
+│   │   ├── ThemeToggle.tsx  # Theme toggle component
+│   │   └── Analytics.tsx    # Analytics component
+│   │
+│   ├── forms/            # Form-related components
+│   │   ├── FormInput.tsx    # Form input component
+│   │   └── FormSelect.tsx   # Form select component
+│   │
+│   └── icons/            # SVG icon components
+│       ├── index.tsx     # Icon exports
+│       └── SocialIcons/  # Social media icons
 │
-├── hooks/                       # Custom React Hooks
-│   ├── useDebounce.ts
-│   └── useLocalStorage.ts
+├── config/               # Application configuration
+│   ├── site.ts          # Site metadata and configuration
+│   ├── routes.ts        # Route definitions and constants
+│   └── theme.ts         # Theme configuration and tokens
 │
-├── lib/
-│   ├── api/                     # API Clients
-│   │   ├── axios.ts
-│   │   └── trpc/
-│   ├── utils/                   # Utility Functions
-│   │   ├── formatter.ts
-│   │   └── validators.ts
-│   └── constants.ts             # App Constants
+├── hooks/               # Custom React hooks
+│   ├── useAuth.ts       # Authentication hook
+│   ├── useAnalytics.ts  # Analytics hook
+│   ├── useDebounce.ts   # Debounce utility hook
+│   └── useLocalStorage.ts # Local storage hook
 │
-├── styles/
-│   ├── globals.css              # Global CSS
-│   ├── theme/                   # CSS Variables & Design Tokens
-│   └── tailwind.css             # Tailwind Directives
+├── lib/                 # Utility libraries and helpers
+│   ├── api/            # API client configurations
+│   │   ├── axios.ts    # Axios instance and interceptors
+│   │   └── trpc/       # tRPC client setup
+│   │
+│   ├── utils/          # Utility functions
+│   │   ├── formatter.ts # Data formatting utilities
+│   │   └── validators.ts # Validation utilities
+│   │
+│   └── constants.ts    # Application constants
 │
-├── types/                       # Global Type Definitions
-│   ├── index.d.ts
-│   ├── next.d.ts                # Next.js Type Extensions
-│   └── custom-types.ts
+├── styles/             # Global styles and CSS
+│   ├── globals.css     # Global CSS styles
+│   ├── theme/          # Theme variables and tokens
+│   └── components/     # Component-specific styles
 │
-├── public/
-│   └── assets/                  # Static Assets
-│       ├── images/
-│       └── fonts/
+├── types/              # TypeScript type definitions
+│   ├── index.d.ts      # Global type declarations
+│   ├── next.d.ts       # Next.js type extensions
+│   └── custom-types.ts # Custom type definitions
 │
-├── services/                    # Business Logic Layer
-│   ├── auth.service.ts
-│   └── analytics.service.ts
+├── services/           # Business logic and services
+│   ├── auth.service.ts    # Authentication service
+│   └── analytics.service.ts # Analytics service
 │
-├── contexts/                    # React Contexts
-│   ├── ThemeContext.tsx
-│   └── AuthContext.tsx
+├── contexts/           # React Context providers
+│   ├── ThemeContext.tsx  # Theme context
+│   └── AuthContext.tsx   # Authentication context
 │
-├── hooks/                       # Custom Hooks
-│   ├── useAuth.ts
-│   └── useAnalytics.ts
-│
-├── icons/                       # SVG Icon Components
-│   ├── BrandIcon.tsx
-│   └── SocialIcons/
-│
-└── __tests__/                   # Test Directory
-    ├── components/
-    └── utils/
+└── __tests__/         # Test files directory
+    ├── components/     # Component tests
+    ├── hooks/         # Hook tests
+    ├── services/      # Service tests
+    └── utils/         # Utility function tests
 ```
 
 ## Code Quality Tools
