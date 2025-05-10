@@ -180,8 +180,7 @@ src/                        # Source code directory
 ├── styles/             # Global styles and CSS
 │   ├── globals.css     # Global CSS styles
 │   ├── theme/          # Theme variables and tokens
-│   ├── components/     # Component-specific styles
-│   └── tailwind.css    # Tailwind CSS configuration
+│   └── components/     # Component-specific styles
 │
 ├── types/              # TypeScript type definitions
 │   ├── index.d.ts      # Global type declarations
