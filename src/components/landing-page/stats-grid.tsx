@@ -8,7 +8,7 @@ export const StatsGrid = () => {
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="rounded-xl border border-gray-700/50 bg-gray-900/50 p-6 backdrop-blur-sm hover:bg-gray-950/50"
+              className="rounded-xl border border-gray-700/50 bg-gray-900/50 p-6 backdrop-blur-sm transition-colors duration-150 hover:bg-gray-950/50"
             >
               <div className="mb-4 text-indigo-400">{stat.icon}</div>
               <h3 className="mb-2 text-3xl font-bold">{stat.value}</h3>
