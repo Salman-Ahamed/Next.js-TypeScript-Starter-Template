@@ -7,8 +7,8 @@ export const Footer = () => {
   const { quickLinks, resources, contact, privacy } = footerLinks;
   return (
     <footer className="border-t border-gray-800 bg-gray-900/50 backdrop-blur-lg">
-      <div className="container mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
+      <div className="container mx-auto px-6">
+        <div className="grid grid-cols-1 gap-12 pt-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
             <h3 className="text-xl font-bold text-gray-100">Next TS App</h3>
             <p className="text-gray-400">
@@ -62,10 +62,9 @@ export const Footer = () => {
                     href={link.path}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-gray-400"
+                    className="text-gray-400 transition-colors hover:text-indigo-400"
                   >
-                    <p>{<link.Icon />}</p>
-                    <span className="transition-colors hover:text-indigo-400"> {link.name}</span>
+                    {link.name}
                   </Link>
                 </li>
               ))}
@@ -73,7 +72,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-gray-800 pt-8">
+        <div className="mt-12 border-t border-gray-800 py-5">
           <div className="flex flex-col items-center justify-between md:flex-row">
             <p className="text-sm text-gray-400">
               © {new Date().getFullYear()} Next.js TypeScript Starter. All rights reserved.

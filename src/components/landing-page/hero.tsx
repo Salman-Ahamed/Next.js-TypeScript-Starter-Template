@@ -22,7 +22,7 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className="relative z-10 pt-36 pb-[93.4px]">
+    <section className="relative z-10 pt-16 pb-[93.4px] md:pt-36">
       <div className="container mx-auto px-6">
         <div className="mx-auto max-w-3xl text-center">
           {version && (
