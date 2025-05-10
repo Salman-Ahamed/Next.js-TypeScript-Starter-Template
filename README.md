@@ -46,7 +46,7 @@ Quickly set up your Next.js + TypeScript + TailwindCSS project using the CLI too
 - Replace my-awesome-app with your desired project name.
 - The CLI will scaffold a fully configured Next.js + TypeScript + TailwindCSS starter for you.
 
-### ✅ Fast  |  🔧 Pre-configured  |  🧪 Ready for development
+### ✅ Fast | 🔧 Pre-configured | 🧪 Ready for development
 
 ---
 
@@ -72,6 +72,28 @@ During project creation, you'll be prompted to:
    ```
 
    **Note**: If you pick `bun`, make sure Bun is installed (`npm install -g bun` or visit [bun.sh](https://bun.sh)). For `pnpm` or `yarn`, install them first if needed.
+
+#### Available Scripts
+
+The project includes several useful scripts:
+
+```bash
+# Development
+bun run dev          # Start development server with Turbopack
+bun run build        # Create production build
+bun run start        # Start production server
+bun run lint         # Run ESLint
+bun run lint:fix     # Fix ESLint errors
+bun run format       # Format code with Prettier
+bun run format:check # Check code formatting
+bun run clear-cache  # Clear Next.js cache, reinstall dependencies, and restart dev server
+```
+
+The `clear-cache` script is particularly useful when you encounter build issues or need to reset your development environment. It:
+
+1. Removes the `.next` directory
+2. Reinstalls dependencies without using cache
+3. Restarts the development server
 
 #### Prerequisites
 

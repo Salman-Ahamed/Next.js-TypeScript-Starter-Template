@@ -53,6 +53,7 @@ export const terminalCommands = [
   { command: "bun run dev", description: "Start dev server" },
   { command: "bun run build", description: "Production build" },
   { command: "bun run lint", description: "Run linter" },
+  { command: "bun run clear-cache", description: "Clear cache and reset dev environment" },
 ];
 
 export const teamMembers = [
