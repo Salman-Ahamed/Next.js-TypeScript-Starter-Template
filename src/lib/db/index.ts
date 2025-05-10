@@ -155,16 +155,11 @@ export const footerLinks: IFooterLinks = {
   privacy: [
     {
       id: 1,
-      name: "Privacy Policy",
-      path: "/",
+      name: "For more information",
+      path: "https://www.npmjs.com/package/next-ts-app?activeTab=readme",
     },
     {
       id: 2,
-      name: "Terms of Service",
-      path: "/",
-    },
-    {
-      id: 3,
       name: "MIT License",
       path: "https://github.com/Salman-Ahamed/Next.js-TypeScript-Starter-Template/blob/main/LICENSE",
     },
