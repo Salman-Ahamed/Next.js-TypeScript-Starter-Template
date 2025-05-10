@@ -3,13 +3,13 @@ import { NextPage } from "next";
 import {
   CTASection,
   FeatureGrid,
+  Footer,
   GradientBar,
   HeroSection,
   StatsGrid,
   TeamMembers,
   TerminalSection,
-} from "@/components/landing-page";
-import { Footer } from "@/components/landing-page/footer";
+} from "@/app/_components";
 
 const Home: NextPage = () => (
   <div className="min-h-screen overflow-hidden bg-gray-950 text-gray-100">
