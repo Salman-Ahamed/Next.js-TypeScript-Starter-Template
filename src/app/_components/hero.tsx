@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-import { GitHubIcon, TerminalIcon } from "@/components/icons";
+import { BookIcon, GitHubIcon, TerminalIcon } from "@/components/icons";
 
 export const HeroSection = () => {
   const [version, setVersion] = useState<string | null>(null);
@@ -66,6 +66,14 @@ export const HeroSection = () => {
               <span className="absolute inset-0 -translate-x-full bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.2),transparent)] opacity-0 transition-opacity duration-300 group-hover:translate-x-full group-hover:opacity-100" />
               <TerminalIcon className="group-hover:animate-pulse" />
               Get Started
+            </Link>
+            <Link
+              href="/developer-guide"
+              className="group relative flex items-center gap-2 overflow-hidden rounded-lg border border-gray-700/50 bg-gray-800/50 px-6 py-3.5 font-medium backdrop-blur-sm transition-all hover:bg-gray-700/50"
+            >
+              <span className="absolute inset-0 -translate-x-full bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.2),transparent)] opacity-0 transition-opacity duration-300 group-hover:translate-x-full group-hover:opacity-100" />
+              <BookIcon className="group-hover:animate-pulse" />
+              Developer Guide
             </Link>
             <Link
               href="https://github.com/Salman-Ahamed/Next.js-TypeScript-Starter-Template"

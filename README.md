@@ -117,13 +117,13 @@ public/                      # Public static assets that are served directly
 src/                        # Source code directory
 ├── app/                    # Next.js 13+ App Router directory
 │   ├── (landing)/         # Landing page route group (optional)
-│   │   ├── components/    # Page-specific components
+│   │   ├── _components/    # Page-specific components
 │   │   ├── error.tsx      # Error boundary for landing page
 │   │   ├── loading.tsx    # Loading state for landing page
 │   │   └── page.tsx       # Landing page entry point
 │   │
 │   ├── (dashboard)/       # Dashboard route group
-│   │   ├── components/    # Dashboard-specific components
+│   │   ├── _components/    # Dashboard-specific components
 │   │   ├── error.tsx      # Error boundary for dashboard
 │   │   ├── loading.tsx    # Loading state for dashboard
 │   │   └── page.tsx       # Dashboard page entry
