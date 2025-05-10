@@ -1,4 +1,5 @@
 import { CheckIcon, CodeIcon, CPUIcon, LayerIcon, LockIcon, ZapIcon } from "@/icons";
+import { IFooterLinks } from "@/types";
 
 export const features = [
   {
@@ -93,3 +94,74 @@ export const teamMembers = [
     ],
   },
 ];
+
+export const footerLinks: IFooterLinks = {
+  quickLinks: [
+    {
+      id: 1,
+      name: "NPM Package",
+      path: "https://www.npmjs.com/package/next-ts-app",
+    },
+    {
+      id: 2,
+      name: "Template Repository",
+      path: "https://github.com/Salman-Ahamed/Next.js-TypeScript-Starter-Template",
+    },
+    {
+      id: 3,
+      name: "Become a Contributor",
+      path: "https://github.com/Salman-Ahamed/Next.js-TypeScript-Starter-Template/blob/main/CONTRIBUTING.md",
+    },
+  ],
+  resources: [
+    {
+      id: 1,
+      name: "Next.js Docs",
+      path: "https://nextjs.org/docs",
+    },
+    {
+      id: 2,
+      name: "TypeScript Docs",
+      path: "https://www.typescriptlang.org/docs",
+    },
+    {
+      id: 3,
+      name: "Tailwind CSS Docs",
+      path: "https://tailwindcss.com/docs",
+    },
+    {
+      id: 4,
+      name: "Bun",
+      path: "https://bun.sh/",
+    },
+  ],
+  contact: [
+    {
+      id: 1,
+      name: "LinkedIn",
+      path: "https://www.linkedin.com/in/salman-ahamad-as/",
+    },
+    {
+      id: 2,
+      name: "Portfolio",
+      path: "https://eyachirarafat.vercel.app/",
+    },
+    {
+      id: 3,
+      name: "Email",
+      path: "mailto:shahriyar.hosen.dev@gmail.com",
+    },
+  ],
+  privacy: [
+    {
+      id: 1,
+      name: "For more information",
+      path: "https://www.npmjs.com/package/next-ts-app?activeTab=readme",
+    },
+    {
+      id: 2,
+      name: "MIT License",
+      path: "https://github.com/Salman-Ahamed/Next.js-TypeScript-Starter-Template/blob/main/LICENSE",
+    },
+  ],
+};
