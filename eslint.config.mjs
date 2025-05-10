@@ -3,6 +3,9 @@ import { fileURLToPath } from "url";
 
 import { FlatCompat } from "@eslint/eslintrc";
 import js from "@eslint/js";
+import nextPlugin from "@next/eslint-plugin-next";
+import tsPlugin from "@typescript-eslint/eslint-plugin";
+import tsParser from "@typescript-eslint/parser";
 import importPlugin from "eslint-plugin-import";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -15,7 +18,25 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   {
-    ignores: ["**/.next/**", "**/node_modules/**", "**/dist/**", "**/build/**", "**/out/**"],
+    files: ["**/*.{js,jsx,ts,tsx}"],
+    plugins: {
+      "@typescript-eslint": tsPlugin,
+      "@next/next": nextPlugin,
+    },
+    languageOptions: {
+      parser: tsParser,
+      parserOptions: {
+        ecmaVersion: "latest",
+        sourceType: "module",
+      },
+    },
+    rules: {
+      "@typescript-eslint/no-unused-expressions": "error",
+      "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
+      "no-console": ["error", { allow: ["warn", "error"] }],
+      "no-restricted-syntax": "off",
+    },
+    ignores: [".next/**/*", "node_modules/**/*", "out/**/*", "build/**/*", "dist/**/*"],
   },
 
   ...compat.extends("next/core-web-vitals", "plugin:@typescript-eslint/recommended"),
