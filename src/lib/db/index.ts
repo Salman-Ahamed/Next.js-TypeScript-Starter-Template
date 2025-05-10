@@ -1,5 +1,16 @@
-import { CheckIcon, CodeIcon, CPUIcon, LayerIcon, LockIcon, ZapIcon } from "@/icons";
-import { IFooterLinks } from "@/types";
+import {
+  CheckIcon,
+  CodeIcon,
+  CPUIcon,
+  GlobeIcon,
+  LayerIcon,
+  LinkedInIcon,
+  LockIcon,
+  MailIcon,
+  ZapIcon,
+} from "@/icons";
+
+import { IFooterLinks } from "@/types/data";
 
 export const features = [
   {
@@ -139,16 +150,19 @@ export const footerLinks: IFooterLinks = {
     {
       id: 1,
       name: "LinkedIn",
+      Icon: LinkedInIcon,
       path: "https://www.linkedin.com/in/salman-ahamad-as/",
     },
     {
       id: 2,
       name: "Portfolio",
+      Icon: GlobeIcon,
       path: "https://eyachirarafat.vercel.app/",
     },
     {
       id: 3,
       name: "Email",
+      Icon: MailIcon,
       path: "mailto:shahriyar.hosen.dev@gmail.com",
     },
   ],
