@@ -37,14 +37,14 @@ A simple starter template for Next.js projects with useful tools:
 
 ### Option 1: Create with CLI **`(Recommended)`**
 
-Quickly set up your Next.js + TypeScript + Tailwindcss project using the CLI tool:
+Quickly set up your Next.js + TypeScript + TailwindCSS project using the CLI tool:
 
 - **📦 using npm**
   ```bash
   npx next-ts-app my-awesome-app
   ```
 - Replace my-awesome-app with your desired project name.
-- The CLI will scaffold a fully configured Next.js + TypeScript + Tailwindcss starter for you.
+- The CLI will scaffold a fully configured Next.js + TypeScript + TailwindCSS starter for you.
 
 ### ✅ Fast  |  🔧 Pre-configured  |  🧪 Ready for development
 
