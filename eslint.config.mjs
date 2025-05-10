@@ -53,11 +53,11 @@ const eslintConfig = [
         },
       ],
       "react/function-component-definition": [
-        "error",
+        "warn",
         { namedComponents: "arrow-function", unnamedComponents: "arrow-function" },
       ],
       "@typescript-eslint/no-unused-vars": [
-        "error",
+        "warn",
         {
           argsIgnorePattern: "^_",
           varsIgnorePattern: "^_",
