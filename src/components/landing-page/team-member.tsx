@@ -43,7 +43,7 @@ export const TeamMember = ({ member }: TProps) => {
           <p className="mb-5 text-sm leading-relaxed text-gray-400/80">{member.bio}</p>
         </div>
 
-        <div className="flex items-center justify-center space-x-4">
+        <div className="flex items-center justify-center space-x-2">
           {member.social.map((social) => (
             <a
               key={social.id}
