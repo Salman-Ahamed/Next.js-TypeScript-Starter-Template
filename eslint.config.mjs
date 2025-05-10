@@ -79,6 +79,7 @@ const eslintConfig = [
             { pattern: "@/components/**", group: "internal", position: "before" },
             { pattern: "@/hooks/**", group: "internal", position: "before" },
             { pattern: "@/lib/**", group: "internal", position: "before" },
+            { pattern: "@/styles/**", group: "internal", position: "before" },
             { pattern: "@/types/**", group: "type", position: "before" },
           ],
           pathGroupsExcludedImportTypes: ["builtin"],
