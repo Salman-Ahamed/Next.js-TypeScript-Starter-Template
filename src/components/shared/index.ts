@@ -1,1 +1,1 @@
-export * from "./TerminalWindow";
+export * from "./terminal-window";
