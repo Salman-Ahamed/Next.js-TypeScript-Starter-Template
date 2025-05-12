@@ -2,10 +2,7 @@
 
 A **production-ready**, **scalable**, and **actively maintained** starter template for building high-quality web apps with **Next.js**, **TypeScript**, and **Tailwind CSS**.
 
-## 🚀 Why Use This Template?
-
-This starter template is designed for **developers of all levels** — from beginners starting their journey to advanced engineers building scalable applications.
-
+<br/>
 <p align="center">
   <img
     src="https://img.shields.io/npm/v/next-ts-app?style=for-the-badge&label=next-ts-app&labelColor=black&logo=npm&color=success"
@@ -25,17 +22,23 @@ This starter template is designed for **developers of all levels** — from begi
   <img src="https://img.shields.io/badge/Prettier-F7B93E?logo=prettier&logoColor=black" alt="Prettier">
   <img src="https://img.shields.io/badge/Husky-000000?logo=git&logoColor=white" alt="Husky">
 </p>
+<br/>
 
-## Main Features
+## 🚀 Why Use This Template?
 
-- ✅ Next.js 15 (App Router)
-- ✅ TypeScript for better coding
-- ✅ Bun for fast package management
-- ✅ ESLint to check code mistakes
-- ✅ Prettier to format code automatically
-- ✅ Husky for Git checks before commits
-- ✅ Ready for production use
-- ✅ Clean project structure
+This starter template is designed for **developers of all levels** — from beginners starting their journey to advanced engineers building scalable applications.
+
+### Key Features
+
+- ⚡️ **Next.js 14+** with App Router
+- ✅ **TypeScript** – full type safety and custom config
+- 🎨 **Tailwind CSS** – preconfigured and responsive
+- 🧹 **ESLint + Prettier** – clean, consistent code
+- 🔐 **Husky + lint-staged** – prevent bad commits
+- 🌿 **Scalable folder structure** – production standard
+- 📦 **Alias support** – easy path management
+- 🧪 Ready for unit & integration testing
+- ☁️ Vercel ready – just push and deploy
 
 ## How to Start
 
