@@ -1,7 +1,10 @@
-#!/bin/sh
-npx lint-staged
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Run lint-staged
+bunx lint-staged
 
 # Additional checks
 echo "Running additional style checks..."
-npx stylelint "src/**/*.css" --fix
+bunx stylelint "**/*.{css,scss}" --max-warnings 0
 bunx eslint . --max-warnings 0
