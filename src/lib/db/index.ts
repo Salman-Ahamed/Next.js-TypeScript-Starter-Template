@@ -60,7 +60,7 @@ export const author = {
   name: "Salman Ahamed",
   img: "https://avatars.githubusercontent.com/u/96829173?v=4",
   role: "Author & Developer",
-  bio: "Experienced Full-Stack Developer with a strong focus on building modern, scalable web applications. Passionate about clean code, developer tooling, and open-source contributions.",
+  bio: "Full-Stack Developer with 3+ years of experience in building modern web apps using Next.js, TypeScript, and Node.js. Passionate about clean code, performance, and developer experience.",
   social: [
     { id: "1", name: "GitHub", link: "https://github.com/Salman-Ahamed" },
     { id: "2", name: "LinkedIn", link: "https://www.linkedin.com/in/salman-ahamad-as/" },
