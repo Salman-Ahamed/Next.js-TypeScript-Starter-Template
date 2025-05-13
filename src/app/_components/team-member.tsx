@@ -113,8 +113,7 @@ export const TeamMembers = () => {
           </p>
         </div>
 
-        {/* Author Section - Enhanced and Prominent */}
-        <div className="mx-auto mb-16 max-w-5xl">
+        <div className="mx-auto max-w-5xl">
           <div className="group relative">
             <div className="absolute -inset-1 rounded-xl bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 opacity-20 blur-lg transition-all duration-500 group-hover:opacity-30" />
             <div className="absolute -inset-0.5 rounded-xl bg-gradient-to-r from-indigo-600/20 via-purple-600/20 to-pink-600/20 opacity-0 blur transition-all duration-500 group-hover:opacity-100" />
@@ -167,18 +166,12 @@ export const TeamMembers = () => {
           </div>
         </div>
 
-        {/* Team Members Grid - More Compact and Centered */}
-        <div className="mx-auto max-w-5xl">
-          <h3 className="mb-10 text-center text-2xl font-bold tracking-tight text-gray-100 sm:text-3xl">
-            Our Amazing Team
-          </h3>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {teamMembers.map((member, i) => (
-              <div key={i} className="w-full">
-                <TeamMember {...member} />
-              </div>
-            ))}
-          </div>
+        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 pt-10 sm:grid-cols-2 lg:grid-cols-3">
+          {teamMembers.map((member, i) => (
+            <div key={i} className="w-full">
+              <TeamMember {...member} />
+            </div>
+          ))}
         </div>
       </div>
     </section>

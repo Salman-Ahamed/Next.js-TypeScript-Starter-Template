@@ -59,7 +59,7 @@ export const terminalCommands = [
 export const author = {
   name: "Salman Ahamed",
   img: "https://avatars.githubusercontent.com/u/96829173?v=4",
-  role: "Author & Developer",
+  role: "Full-Stack Developer",
   bio: "Full-Stack Developer with 3+ years of experience in building modern web apps using Next.js, TypeScript, and Node.js. Passionate about clean code, performance, and developer experience.",
   social: [
     { id: "1", name: "GitHub", link: "https://github.com/Salman-Ahamed" },
@@ -73,7 +73,7 @@ export const teamMembers = [
     name: "Eyachir Arafat",
     img: "https://avatars.githubusercontent.com/u/177961704?v=4",
     role: "Front-End Developer",
-    bio: "Front-end developer skilled in React, Next.js, and responsive design. Passionate about user experience.",
+    bio: "Crafting beautiful web experiences with React and Next.js. Dedicated to building intuitive interfaces that users love.",
     social: [
       { id: "1", name: "GitHub", link: "https://github.com/EyachirArafat" },
       { id: "2", name: "LinkedIn", link: "https://linkedin.com/in/eyachirarafat" },
@@ -84,7 +84,7 @@ export const teamMembers = [
     name: "Sheikh Hasibul Alam",
     img: "https://avatars.githubusercontent.com/u/145800508?v=4",
     role: "Front-End Developer",
-    bio: "Front-end developer with React and Next.js expertise. Builds clean, accessible apps and values best practices.",
+    bio: "Building modern web applications with React and Next.js. Focused on performance, accessibility, and clean code.",
     social: [
       { id: "1", name: "GitHub", link: "https://github.com/Hashibul-Alam" },
       { id: "2", name: "LinkedIn", link: "https://www.linkedin.com/in/hasibul231/" },
@@ -95,7 +95,7 @@ export const teamMembers = [
     name: "Md Amzad Hossain Omor",
     img: "https://avatars.githubusercontent.com/u/139708044?v=4",
     role: "Front-End Developer",
-    bio: "Front-end developer focused on responsive interfaces and clean code. Expert in React, JavaScript, Tailwind CSS, and modern web development.",
+    bio: "Creating responsive web applications with React and Tailwind CSS. Passionate about modern UI/UX design.",
     social: [
       { id: "1", name: "GitHub", link: "https://github.com/mdamzadhossainomor" },
       { id: "2", name: "LinkedIn", link: "https://www.linkedin.com/in/md-amzad-hossain-omor" },
