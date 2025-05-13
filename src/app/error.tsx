@@ -6,10 +6,8 @@ import { Button } from "@/components/ui";
 
 type ErrorProps = { error: Error; reset: () => void };
 const Error: FC<ErrorProps> = ({ error, reset }) => {
-  useEffect(() => {
-    // Log the error to an error reporting service
-    console.error("Application error:", error);
-  }, [error]);
+  // Log the error to an error reporting service
+  useEffect(() => console.error("Application error:", error), [error]);
 
   return (
     <div className="fixed inset-0 overflow-hidden bg-gray-950 text-gray-100">
