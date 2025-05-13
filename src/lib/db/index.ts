@@ -95,7 +95,7 @@ export const teamMembers = [
     name: "Md Amzad Hossain Omor",
     img: "https://avatars.githubusercontent.com/u/139708044?v=4",
     role: "Front-End Developer",
-    bio: "Front-end developer focused on responsive interfaces and clean code. Expert in HTML, CSS, JS, and UI design.",
+    bio: "Front-end developer focused on responsive interfaces and clean code. Expert in React, JavaScript, Tailwind CSS, and modern web development.",
     social: [
       { id: "1", name: "GitHub", link: "https://github.com/mdamzadhossainomor" },
       { id: "2", name: "LinkedIn", link: "https://www.linkedin.com/in/md-amzad-hossain-omor" },
