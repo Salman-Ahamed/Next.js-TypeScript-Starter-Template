@@ -14,7 +14,7 @@ export const CopyButton = () => {
   return (
     <button
       onClick={handleCopy}
-      className="relative h-full cursor-pointer bg-gray-700/50 px-4 py-4 text-sm font-medium text-indigo-400 transition-all hover:bg-gray-600/50"
+      className="relative h-full cursor-pointer bg-gray-700/50 px-3 py-2 text-sm font-medium text-indigo-400 transition-all hover:bg-gray-600/50 md:px-6 md:py-4"
       title={copied ? "Copied to clipboard!" : "Copy to clipboard"}
     >
       {copied ? "Copied!" : "Copy"}
