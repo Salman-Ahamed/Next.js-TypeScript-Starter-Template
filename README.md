@@ -30,7 +30,7 @@ This starter template is designed for **developers of all levels** — from begi
 
 ### Key Features
 
-- ⚡️ **Next.js 14+** with App Router
+- ⚡️ **Next.js 15+** with App Router
 - ✅ **TypeScript** – full type safety and custom config
 - 🎨 **Tailwind CSS** – preconfigured and responsive
 - 🧹 **ESLint + Prettier** – clean, consistent code
