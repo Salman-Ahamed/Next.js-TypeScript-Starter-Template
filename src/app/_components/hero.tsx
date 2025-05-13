@@ -27,8 +27,8 @@ export const HeroSection = async () => {
             </span>
           </span>
         </div>
-        <span className="text-sm text-gray-500">•</span>
-        <span className="text-sm text-gray-400">Production Ready</span>
+        <span className="hidden text-sm text-gray-500 sm:inline">•</span>
+        <span className="hidden text-sm text-gray-400 sm:inline">Production Ready</span>
       </div>
       <h1 className="bg-[linear-gradient(to_right,theme(colors.gray.100),theme(colors.gray.300))] bg-clip-text text-5xl font-bold text-transparent md:text-6xl">
         The Ultimate{" "}

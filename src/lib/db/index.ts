@@ -72,8 +72,8 @@ export const teamMembers = [
   {
     name: "Eyachir Arafat",
     img: "https://avatars.githubusercontent.com/u/177961704?v=4",
-    role: "Web Developer",
-    bio: "Creative web developer with a strong focus on responsive design and clean UI. Loves building user-friendly interfaces with modern tools.",
+    role: "Front-End Developer",
+    bio: "Front-end developer skilled in React, Next.js, and responsive design. Passionate about user experience.",
     social: [
       { id: "1", name: "GitHub", link: "https://github.com/EyachirArafat" },
       { id: "2", name: "LinkedIn", link: "https://linkedin.com/in/eyachirarafat" },
@@ -84,7 +84,7 @@ export const teamMembers = [
     name: "Sheikh Hasibul Alam",
     img: "https://avatars.githubusercontent.com/u/145800508?v=4",
     role: "Front-End Developer",
-    bio: "Dedicated front-end developer skilled in React and Next.js. Passionate about building clean, accessible, and high-performance web applications.",
+    bio: "Front-end developer with React and Next.js expertise. Builds clean, accessible apps and values best practices.",
     social: [
       { id: "1", name: "GitHub", link: "https://github.com/Hashibul-Alam" },
       { id: "2", name: "LinkedIn", link: "https://www.linkedin.com/in/hasibul231/" },
@@ -95,7 +95,7 @@ export const teamMembers = [
     name: "Md Amzad Hossain Omor",
     img: "https://avatars.githubusercontent.com/u/139708044?v=4",
     role: "Front-End Developer",
-    bio: "Front-end developer with a passion for building responsive interfaces and clean, efficient code. Skilled in HTML, CSS, JavaScript, and modern UI design.",
+    bio: "Front-end developer focused on responsive interfaces and clean code. Expert in HTML, CSS, JS, and UI design.",
     social: [
       { id: "1", name: "GitHub", link: "https://github.com/mdamzadhossainomor" },
       { id: "2", name: "LinkedIn", link: "https://www.linkedin.com/in/md-amzad-hossain-omor" },
