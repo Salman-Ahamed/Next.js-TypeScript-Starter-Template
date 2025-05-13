@@ -16,6 +16,7 @@ export const CTASection = () => {
             Start your project with enterprise-grade tooling and architecture.
           </p>
           <Link
+            target="_blank"
             href="https://www.npmjs.com/package/next-ts-app"
             className="group relative inline-flex items-center gap-2 overflow-hidden rounded-lg bg-indigo-600 px-8 py-4 font-medium transition-all hover:bg-indigo-700"
           >
