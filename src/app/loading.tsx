@@ -18,7 +18,7 @@ const Loading = () => {
     <div className="flex min-h-screen items-center justify-center bg-white transition-opacity duration-500">
       <div className="flex flex-col items-center space-y-4">
         <div className="h-16 w-16 animate-spin rounded-full border-4 border-dashed border-blue-500"></div>
-        <p className="text-lg font-semibold text-blue-600">Loding...</p>
+        <p className="text-lg font-semibold text-blue-600">Loading, please wait...</p>
       </div>
     </div>
   );
