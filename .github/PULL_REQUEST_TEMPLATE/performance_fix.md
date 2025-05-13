@@ -1,14 +1,14 @@
 ---
 name: "⚡ Performance Fix"
-description: "Pull request for optimizing performance issues"
+description: "For performance optimizations and speed improvements"
 title: "[PERF] #123 - Brief description"
 labels: "performance, optimization"
 assignees: ""
 ---
 
-## 🐌 Performance Issue
+## 🎯 Performance Issue
 
-<!-- Describe the bottleneck being addressed -->
+<!-- Provide a clear description of the performance bottleneck -->
 
 ## 📊 Benchmark Results
 
@@ -16,6 +16,7 @@ assignees: ""
 | ------------ | ------ | ----- | ----------- |
 | Load Time    | 2.4s   | 1.1s  | 54% ↑       |
 | Memory Usage | 450MB  | 320MB | 29% ↓       |
+| CPU Usage    | 75%    | 45%   | 40% ↓       |
 
 ## 🔍 Root Cause Analysis
 
@@ -24,15 +25,18 @@ assignees: ""
 ## 🛠️ Optimization Techniques Applied
 
 - [ ] Code refactoring
+- [ ] Algorithm improvement
 - [ ] Database query optimization
 - [ ] Caching implementation
-- [ ] Algorithm improvement
+- [ ] Resource optimization
 
-## 📈 Performance Testing
+## 🧪 Performance Testing
 
 - [ ] Load testing completed
 - [ ] Stress testing completed
 - [ ] A/B testing results
+- [ ] Memory profiling
+- [ ] CPU profiling
 
 ### Test Configuration
 
@@ -40,6 +44,30 @@ assignees: ""
 {
   "environment": "Production-like",
   "test_scale": "10,000 RPM",
-  "duration": "1 hour"
+  "duration": "1 hour",
+  "monitoring": "enabled"
 }
 ```
+
+## 📚 Documentation
+
+- [ ] Optimization documented
+- [ ] Performance metrics updated
+- [ ] Monitoring updated
+- [ ] Alerts configured
+
+## 🔍 Review Checklist
+
+- [ ] No regression issues
+- [ ] Resource usage optimized
+- [ ] Scalability maintained
+- [ ] Security implications reviewed
+- [ ] Cost impact assessed
+
+## 📌 Related Issues
+
+Closes #123
+
+## 📝 Additional Notes
+
+<!-- Any additional context or notes -->

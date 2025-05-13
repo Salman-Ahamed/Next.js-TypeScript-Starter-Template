@@ -5,7 +5,7 @@
   "author": {
     "name": "Salman Ahamed",
     "email": "me.shahriyarhosen@gmail.com",
-    "url": "https://github.com/Salman-Ahamed/Next.js-TypeScript-Starter-Template"
+    "url": "https://github.com/Salman-Ahamed"
   },
   "scripts": {
     "dev": "next dev --turbopack",

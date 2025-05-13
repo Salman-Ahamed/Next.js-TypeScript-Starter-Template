@@ -1,31 +1,93 @@
 ---
-name: "🎨 Frontend Issue"
-about: Report UI/UX problems
-title: "[UI] Brief description"
-labels: "frontend"
+name: 🎨 Frontend Issue
+about: Report UI/UX problems or improvements
+title: "[Frontend] "
+labels: frontend
 assignees: ""
 ---
 
+**Issue Type**
+
+- [ ] UI Bug
+- [ ] UX Problem
+- [ ] Performance Issue
+- [ ] Accessibility Issue
+- [ ] Responsive Design
+- [ ] Feature Request
+- [ ] Other (please specify)
+
+**Component Information**
+
+- Component Name: [e.g. Login Form, Navigation Bar]
+- Page/Route: [e.g. /login, /dashboard]
+- Framework: [e.g. React, Vue]
+- Component Library: [e.g. Material-UI, Tailwind]
+
 **Current Behavior**
-Describe what's currently happening.
+
+- What's happening?
+- When does it occur?
+- How does it affect users?
 
 **Expected Behavior**
-Describe what should happen.
+
+- What should happen?
+- How should it work?
+- What's the ideal user experience?
 
 **Reproduction Steps**
 
-1. Navigate to...
-2. Click...
-3. Observe...
+1. Step one
+2. Step two
+3. Step three
 
-**Screenshots**
-Before/after if applicable.
+**Visual Evidence**
+
+- Screenshots:
+- Screen Recordings:
+- Before/After Comparisons:
+- Design Mockups:
 
 **Browser Information**
 
-- Name and version
-- Screen size
-- Device type
+- Browser: [e.g. Chrome 120, Firefox 121]
+- Version: [e.g. 120.0.6099.109]
+- OS: [e.g. Windows 11, macOS Ventura]
+- Device: [e.g. Desktop, Mobile]
+- Screen Size: [e.g. 1920x1080]
+- Zoom Level: [e.g. 100%]
+
+**Technical Details**
+
+- Console Errors:
+- Network Requests:
+- Performance Metrics:
+- CSS/JS Issues:
+
+**Accessibility**
+
+- WCAG Guidelines:
+- Screen Reader Issues:
+- Keyboard Navigation:
+- Color Contrast:
+
+**Impact**
+
+- [ ] Critical (Blocks User Flow)
+- [ ] High (Major UX Issue)
+- [ ] Medium (Minor UX Issue)
+- [ ] Low (Cosmetic)
 
 **Additional Context**
-Any other relevant information.
+
+- User Feedback:
+- Analytics Data:
+- Related Issues:
+- Design System:
+
+**Priority Level**
+
+- [ ] Critical (Blocks Release)
+- [ ] High (Should be fixed in next sprint)
+- [ ] Medium (Should be addressed soon)
+- [ ] Low (Nice to have)
