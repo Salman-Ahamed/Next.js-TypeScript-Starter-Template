@@ -56,18 +56,19 @@ export const terminalCommands = [
   { command: "bun run clear-cache", description: "Clear cache and reset dev environment" },
 ];
 
+export const author = {
+  name: "Salman Ahamed",
+  img: "https://avatars.githubusercontent.com/u/96829173?v=4",
+  role: "Author & Developer",
+  bio: "Experienced Full-Stack Developer with a strong focus on building modern, scalable web applications. Passionate about clean code, developer tooling, and open-source contributions.",
+  social: [
+    { id: "1", name: "GitHub", link: "https://github.com/Salman-Ahamed" },
+    { id: "2", name: "LinkedIn", link: "https://www.linkedin.com/in/salman-ahamad-as/" },
+    { id: "3", name: "Email", link: "mailto:shahriyar.hosen.dev@gmail.com" },
+  ],
+};
+
 export const teamMembers = [
-  {
-    name: "Salman Ahamed",
-    img: "https://avatars.githubusercontent.com/u/96829173?v=4",
-    role: "Author & Developer",
-    bio: "3+ years of experience building scalable web applications",
-    social: [
-      { id: "1", name: "Github", link: "https://github.com/Salman-Ahamed" },
-      { id: "2", name: "Linkedin", link: "https://www.linkedin.com/in/salman-ahamad-as/" },
-      { id: "3", name: "Email", link: "mailto:shahriyar.hosen.dev@gmail.com" },
-    ],
-  },
   {
     name: "Eyachir Arafat",
     img: "https://avatars.githubusercontent.com/u/177961704?v=4",
