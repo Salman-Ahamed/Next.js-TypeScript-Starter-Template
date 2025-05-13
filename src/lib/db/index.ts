@@ -97,11 +97,7 @@ export const teamMembers = [
     bio: "Specializes in creating intuitive developer experiences",
     social: [
       { id: "1", name: "Github", link: "https://github.com/mdamzadhossainomor" },
-      {
-        id: "2",
-        name: "Linkedin",
-        link: "https://www.linkedin.com/in/md-amzad-hossain-omor",
-      },
+      { id: "2", name: "Linkedin", link: "https://www.linkedin.com/in/md-amzad-hossain-omor" },
       { id: "3", name: "Email", link: "mailto:mdamzadhossainomor@gmail.com" },
     ],
   },
@@ -109,11 +105,7 @@ export const teamMembers = [
 
 export const footerLinks: FooterLinks = {
   quickLinks: [
-    {
-      id: 1,
-      name: "NPM Package",
-      path: "https://www.npmjs.com/package/next-ts-app",
-    },
+    { id: 1, name: "NPM Package", path: "https://www.npmjs.com/package/next-ts-app" },
     {
       id: 2,
       name: "Template Repository",
@@ -126,26 +118,10 @@ export const footerLinks: FooterLinks = {
     },
   ],
   resources: [
-    {
-      id: 1,
-      name: "Next.js Docs",
-      path: "https://nextjs.org/docs",
-    },
-    {
-      id: 2,
-      name: "TypeScript Docs",
-      path: "https://www.typescriptlang.org/docs",
-    },
-    {
-      id: 3,
-      name: "Tailwind CSS Docs",
-      path: "https://tailwindcss.com/docs",
-    },
-    {
-      id: 4,
-      name: "Bun",
-      path: "https://bun.sh/",
-    },
+    { id: 1, name: "Next.js Docs", path: "https://nextjs.org/docs" },
+    { id: 2, name: "TypeScript Docs", path: "https://www.typescriptlang.org/docs" },
+    { id: 3, name: "Tailwind CSS Docs", path: "https://tailwindcss.com/docs" },
+    { id: 4, name: "Bun Docs", path: "https://bun.sh/" },
   ],
   contact: [
     {
@@ -154,18 +130,8 @@ export const footerLinks: FooterLinks = {
       Icon: LinkedInIcon,
       path: "https://www.linkedin.com/in/salman-ahamad-as/",
     },
-    {
-      id: 2,
-      name: "Portfolio",
-      Icon: GlobeIcon,
-      path: "https://eyachirarafat.vercel.app/",
-    },
-    {
-      id: 3,
-      name: "Email",
-      Icon: MailIcon,
-      path: "mailto:shahriyar.hosen.dev@gmail.com",
-    },
+    { id: 2, name: "Portfolio", Icon: GlobeIcon, path: "https://eyachirarafat.vercel.app/" },
+    { id: 3, name: "Email", Icon: MailIcon, path: "mailto:shahriyar.hosen.dev@gmail.com" },
   ],
   privacy: [
     {
