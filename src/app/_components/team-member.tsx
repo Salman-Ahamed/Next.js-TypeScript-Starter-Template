@@ -1,26 +1,24 @@
 "use client";
 
 import Image from "next/image";
+import { FC } from "react";
 
 import { GitHubIcon, LinkedInIcon, MailIcon } from "@/components/icons";
 
 import { teamMembers } from "@/lib/db";
 
+type TSocial = { id: string; name: string; link: string };
 type TProps = {
-  member: {
-    name: string;
-    img: string;
-    role: string;
-    bio: string;
-    social: {
-      id: string;
-      name: string;
-      link: string;
-    }[];
-  };
+  name: string;
+  img: string;
+  role: string;
+  bio: string;
+  social: TSocial[];
 };
 
-export const TeamMember = ({ member }: TProps) => {
+export const TeamMember: FC<TProps> = (props) => {
+  const { name, img, role, bio, social } = props;
+
   return (
     <div className="group relative transform transition-all duration-300 hover:-translate-y-1">
       <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 opacity-0 blur-sm transition-all duration-300 group-hover:opacity-20 group-hover:blur-none" />
@@ -31,8 +29,8 @@ export const TeamMember = ({ member }: TProps) => {
           <div className="absolute -inset-0.5 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 opacity-0 blur-md transition-all duration-500 group-hover:opacity-70 group-hover:blur-sm" />
           <div className="relative flex h-full w-full items-center justify-center overflow-hidden rounded-full border border-gray-700/50 bg-gray-800">
             <Image
-              src={member.img}
-              alt={member.name}
+              src={img}
+              alt={name}
               width={112}
               height={112}
               className="transition-transform duration-300 group-hover:scale-105"
@@ -41,20 +39,20 @@ export const TeamMember = ({ member }: TProps) => {
         </div>
 
         <div className="text-center">
-          <h3 className="mb-1 text-xl font-bold tracking-tight text-gray-100">{member.name}</h3>
-          <p className="mb-3 text-sm font-medium text-indigo-400/90">{member.role}</p>
-          <p className="mb-5 text-sm leading-relaxed text-gray-400/80">{member.bio}</p>
+          <h3 className="mb-1 text-xl font-bold tracking-tight text-gray-100">{name}</h3>
+          <p className="mb-3 text-sm font-medium text-indigo-400/90">{role}</p>
+          <p className="mb-5 text-sm leading-relaxed text-gray-400/80">{bio}</p>
         </div>
 
         <div className="flex items-center justify-center space-x-3">
-          {member.social.map((social) => (
+          {social.map((social) => (
             <a
               key={social.id}
               href={social.link}
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full p-2 text-gray-400 transition-all hover:bg-gray-800 hover:text-indigo-300"
-              aria-label={`${member.name}'s ${social.name}`}
+              aria-label={`${name}'s ${social.name}`}
             >
               {social.name === "Github" ? (
                 <GitHubIcon className="h-5 w-5" />
@@ -85,8 +83,8 @@ export const TeamMembers = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-          {teamMembers.map((member, index) => (
-            <TeamMember key={index} member={member} />
+          {teamMembers.map((member, i) => (
+            <TeamMember key={i} {...member} />
           ))}
         </div>
       </div>

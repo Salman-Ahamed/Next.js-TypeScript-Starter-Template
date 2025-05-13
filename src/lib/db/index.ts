@@ -61,7 +61,7 @@ export const teamMembers = [
     name: "Salman Ahamed",
     img: "https://avatars.githubusercontent.com/u/96829173?v=4",
     role: "Author & Developer",
-    bio: "5+ years of experience building scalable web applications",
+    bio: "3+ years of experience building scalable web applications",
     social: [
       { id: "1", name: "Github", link: "https://github.com/Salman-Ahamed" },
       { id: "2", name: "Linkedin", link: "https://www.linkedin.com/in/salman-ahamad-as/" },
