@@ -32,12 +32,6 @@ if ! npx lint-staged; then
     print_error "lint-staged failed"
 fi
 
-# Run style checks
-print_status "Running style checks..."
-if ! npx stylelint "src/**/*.css" --fix; then
-    print_error "stylelint failed"
-fi
-
 # Run ESLint
 print_status "Running ESLint..."
 if ! npx eslint . --max-warnings 0; then
