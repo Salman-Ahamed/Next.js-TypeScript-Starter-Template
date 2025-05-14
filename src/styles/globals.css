@@ -11,10 +11,3 @@
         transform: translateY(0);
     }
 }
-
-@theme {
-    --color-primary: "#000949";
-    --color-clr2: "#030121";
-    --color-clr3: "#000949";
-    --color-lightblue: "#3b82f6";
-}
