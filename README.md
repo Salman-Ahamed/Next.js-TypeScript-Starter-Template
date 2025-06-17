@@ -132,7 +132,6 @@ Read our [CONTRIBUTING GUIDE](CONTRIBUTING.md) to help improve this project.
 Free to use under [MIT License](LICENSE). See LICENSE file for details.
 
 ```
-
 Key improvements for simplicity:
 1. Short sentences and common words
 2. Removed technical jargon
