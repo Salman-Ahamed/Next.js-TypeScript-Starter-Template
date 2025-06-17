@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Next.js TypeScript Template",
-  description: "A professional Next.js template with TypeScript",
+  description: "A professional Next.js Template with TypeScript",
 };
 
 type TProps = Readonly<IChildren>;
