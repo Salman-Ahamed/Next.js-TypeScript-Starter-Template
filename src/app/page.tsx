@@ -6,14 +6,11 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 import DealComponent from "@/components/deal";
-import Header from "@/components/navbar";
 
 const HeroSection = () => {
   return (
     <>
-      <div>
-        <Header />
-      </div>
+      <div></div>
       <div className="grid grid-cols-1 gap-6 bg-white px-6 md:grid-cols-2">
         {/* Left Section */}
         <motion.div
