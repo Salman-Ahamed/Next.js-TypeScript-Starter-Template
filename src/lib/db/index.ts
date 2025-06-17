@@ -73,7 +73,7 @@ export const teamMembers = [
     name: "Eyachir Arafat",
     img: "https://avatars.githubusercontent.com/u/177961704?v=4",
     role: "Front-End Developer",
-    bio: "Crafting beautiful web experiences with React and Next.js. Dedicated to building intuitive interfaces that users love.",
+    bio: "Crafting beautiful web experiences with, JavaScript, Model Context Protocol (MCP), React and Next.js. Dedicated to building intuitive interfaces that users love.",
     social: [
       { id: "1", name: "GitHub", link: "https://github.com/EyachirArafat" },
       { id: "2", name: "LinkedIn", link: "https://linkedin.com/in/eyachirarafat" },

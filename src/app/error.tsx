@@ -7,7 +7,6 @@ import { Button } from "@/components/ui";
 
 type ErrorProps = { error: Error; reset: () => void };
 const Error: FC<ErrorProps> = ({ error, reset }) => {
-  // Log the error to an error reporting service
   useEffect(() => console.error("Application error:", error), [error]);
 
   return (
