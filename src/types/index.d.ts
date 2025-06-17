@@ -1,15 +1,4 @@
-declare interface IChildren {
-  children: React.ReactNode;
-}
-declare interface IClassName {
-  className?: string;
-}
-declare interface ISearchParams {
-  searchParams: { callbackUrl: string; email: string };
-}
-
-declare interface ICallbackUrl {
-  callbackUrl: string;
-}
-
-declare interface IClassNameWithChildren extends IChildren, IClassName {}
+declare type IChildren = { children: React.ReactNode };
+declare type IClassName = { className?: string };
+declare type ISearchParams = { searchParams: { id: string; email: string } };
+declare type IClassNameWithChildren = IChildren & IClassName;
