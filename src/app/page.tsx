@@ -40,7 +40,7 @@ const HeroSection = () => {
         >
           {/* Content */}
           <div className="z-10">
-            <p className="mb-2 text-sm underline">Limited Time Deals</p>
+            <p className="mb-2 text-sm underline">Limited Time Deal</p>
             <h2 className="mb-4 text-2xl leading-tight font-bold md:text-3xl">
               Save 15% on
               <br />
