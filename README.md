@@ -3,6 +3,7 @@
 A **production-ready**, **scalable**, and **actively maintained** starter template for building high-quality web apps with **Next.js**, **TypeScript**, and **Tailwind CSS**.
 
 <br/>
+
 <p align="center">
   <img
     src="https://img.shields.io/npm/v/next-ts-app?style=for-the-badge&label=next-ts-app&labelColor=black&logo=npm&color=success"
