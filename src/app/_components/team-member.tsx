@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-
 import { FC } from "react";
 
 import { GitHubIcon, LinkedInIcon, MailIcon } from "@/components/icons";

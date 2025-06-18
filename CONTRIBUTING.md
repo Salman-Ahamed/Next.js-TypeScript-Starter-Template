@@ -1,13 +1,13 @@
 # How to Contribute 🤝
 
-Welcome to the Next.js TypeScript Starter Template! We’re happy you want to help. Follow these steps to contribute easily.
+Welcome to the Next.js TypeScript Starter Template! We're happy you want to help. Follow these steps to contribute easily.
 
 ## Set Up Your Environment
 
 ### What You Need
 
 - Node.js (version 18 or higher)
-- Bun (version 1.0 or higher)
+- Package Manager (Bun recommended, or npm/yarn/pnpm)
 - Git
 
 ### Steps to Set Up
@@ -19,16 +19,36 @@ Welcome to the Next.js TypeScript Starter Template! We’re happy you want to he
    cd Next.js-TypeScript-Starter-Template
    ```
 
-2. Install dependencies:
+2. Install dependencies (choose your preferred package manager):
 
    ```bash
+   # Using Bun (Recommended)
    bun install
+
+   # Using npm
+   npm install
+
+   # Using yarn
+   yarn install
+
+   # Using pnpm
+   pnpm install
    ```
 
 3. Start the development server:
 
    ```bash
+   # Using Bun (Recommended)
    bun run dev
+
+   # Using npm
+   npm run dev
+
+   # Using yarn
+   yarn dev
+
+   # Using pnpm
+   pnpm dev
    ```
 
 ## Code Quality Rules
@@ -43,7 +63,7 @@ We use Husky to check code before you commit:
 
 ### Code Checks (ESLint)
 
-We use ESLint to keep code consistent. Here’s what it does:
+We use ESLint to keep code consistent. Here's what it does:
 
 - Follows Next.js and TypeScript best practices.
 - Organizes imports in a specific order.
@@ -55,7 +75,7 @@ We use ESLint to keep code consistent. Here’s what it does:
 1. **Components**:
 
    ```typescript
-   // Good
+   // Recommended
    interface UserProfileProps {
      name: string;
      age: number;
@@ -65,7 +85,7 @@ We use ESLint to keep code consistent. Here’s what it does:
      <div>{name} ({age})</div>
    );
 
-   // Bad
+   // Avoid
    function UserProfile(props) {
      return <div>{props.name}</div>;
    }
@@ -74,12 +94,12 @@ We use ESLint to keep code consistent. Here’s what it does:
 2. **Functions**:
 
    ```typescript
-   // Good
+   // Recommended
    const getTotal = (items: Item[]): number => {
      return items.reduce((sum, item) => sum + item.price, 0);
    };
 
-   // Bad
+   // Avoid
    function getTotal(items) {
      let sum = 0;
      for (let i = 0; i < items.length; i++) {
@@ -92,7 +112,7 @@ We use ESLint to keep code consistent. Here’s what it does:
 3. **TypeScript**:
 
    ```typescript
-   // Good
+   // Recommended
    type UserRole = "admin" | "user";
    interface User {
      id: string;
@@ -120,10 +140,10 @@ Prettier keeps your code neat:
 
   ```bash
   # Check formatting
-  bun run format:check
+  bun run format:check # or npm run format:check, yarn format:check, pnpm format:check
 
   # Fix formatting
-  bun run format
+  bun run format # or npm run format, yarn format, pnpm format
   ```
 
 ## How to Make Changes
@@ -144,9 +164,17 @@ Prettier keeps your code neat:
 3. Check your code:
 
    ```bash
+   # Using Bun (Recommended)
    bun run lint      # Find errors
-   bun run lint:fix  # Fix errors
-   bun run format    # Format code
+
+   # Using npm
+   npm run lint
+
+   # Using yarn
+   yarn lint
+
+   # Using pnpm
+   pnpm lint
    ```
 
 4. Push your changes and create a Pull Request (PR):

@@ -2,7 +2,6 @@
 
 import { FC, useEffect } from "react";
 
-import { ArrowIcon, CautionIcon } from "@/components/icons";
 import { Button } from "@/components/ui";
 
 type ErrorProps = { error: Error; reset: () => void };
@@ -47,31 +46,11 @@ const Error: FC<ErrorProps> = ({ error, reset }) => {
               Go to homepage
             </Button>
           </div>
-          {process.env.NODE_ENV === "development" && (
-            <div className="scrollbar-custom mt-4 max-h-[40vh] w-full overflow-auto rounded-lg border border-amber-500/30 bg-amber-500/5 p-4 text-left shadow-lg shadow-amber-500/5 backdrop-blur-sm">
-              <div className="flex items-start gap-3">
-                <CautionIcon className="h-5 w-5 flex-shrink-0 text-amber-400" />
-                <div className="flex-1">
-                  <h4 className="text-sm font-semibold text-amber-300">Development Warning</h4>
-                  <div className="mt-2 space-y-3">
-                    <pre className="mb-3 w-full overflow-x-auto rounded bg-amber-900/10 px-3 py-2 font-mono text-sm text-amber-200">
-                      {error.message}
-                    </pre>
-                    {error.stack && (
-                      <details className="group">
-                        <summary className="flex cursor-pointer items-center text-xs text-amber-400 hover:text-amber-300">
-                          <span>Stack trace</span>
 
-                          <ArrowIcon className="ml-1 h-3 w-3 transition-transform group-open:rotate-180" />
-                        </summary>
-                        <pre className="mt-1 overflow-x-auto rounded bg-amber-900/20 px-3 py-2 font-mono text-xs text-amber-300/80">
-                          {error.stack}
-                        </pre>
-                      </details>
-                    )}
-                  </div>
-                </div>
-              </div>
+          {process.env.NODE_ENV === "development" && (
+            <div className="mt-4 max-h-[30vh] overflow-y-auto rounded-lg border border-gray-800/30 bg-gray-900/50 p-3 text-left backdrop-blur-sm sm:mt-6 sm:p-4">
+              <p className="text-sm font-medium text-gray-400">Error details:</p>
+              <pre className="mt-2 text-sm text-gray-400">{error.message}</pre>
             </div>
           )}
         </div>
