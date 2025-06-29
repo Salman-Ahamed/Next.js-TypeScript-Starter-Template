@@ -53,14 +53,6 @@ Welcome to the Next.js TypeScript Starter Template! We're happy you want to help
 
 ## Code Quality Rules
 
-### Git Checks (Husky)
-
-We use Husky to check code before you commit:
-
-- It runs automatically before commits.
-- It checks for code mistakes and formatting.
-- It stops commits if there are errors (warnings are okay).
-
 ### Code Checks (ESLint)
 
 We use ESLint to keep code consistent. Here's what it does:

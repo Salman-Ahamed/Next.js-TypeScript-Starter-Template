@@ -21,7 +21,6 @@ A **production-ready**, **scalable**, and **actively maintained** starter templa
   <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwind-css&logoColor=white" alt="Tailwind CSS">
   <img src="https://img.shields.io/badge/ESLint-4B32C3?logo=eslint&logoColor=white" alt="ESLint">
   <img src="https://img.shields.io/badge/Prettier-F7B93E?logo=prettier&logoColor=black" alt="Prettier">
-  <img src="https://img.shields.io/badge/Husky-000000?logo=git&logoColor=white" alt="Husky">
 </p>
 <br/>
 
@@ -35,7 +34,6 @@ This starter template is designed for **developers of all levels** — from begi
 - ✅ **TypeScript** – full type safety and custom config
 - 🎨 **Tailwind CSS** – preconfigured and responsive
 - 🧹 **ESLint + Prettier** – clean, consistent code
-- 🔐 **Husky + lint-staged** – prevent bad commits
 - 🌿 **Scalable folder structure** – production standard
 - 📦 **Alias support** – easy path management
 - 🧪 Ready for unit & integration testing
@@ -118,7 +116,6 @@ After installation, you'll get:
 - ✅ TypeScript configuration
 - ✅ Tailwind CSS setup
 - ✅ ESLint & Prettier
-- ✅ Git hooks with Husky
 - ✅ Project structure ready to go
 
 ### Option 2: Use GitHub Template
@@ -239,8 +236,6 @@ These tools keep your code neat:
 - **ESLint**: Finds code mistakes.
 - **Prettier**: Formats code nicely.
 - **Tailwind CSS**: Organizes styles.
-- **Husky**: Checks code before commits.
-- **lint-staged**: Runs checks on changed files.
 
 Example rule for imports:
 
