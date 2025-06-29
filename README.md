@@ -29,14 +29,14 @@ This starter template is designed for **developers of all levels** — from begi
 
 ### Key Features
 
-- ⚡️ **Next.js 15+** with App Router
-- ✅ **TypeScript** – full type safety and custom config
-- 🎨 **Tailwind CSS** – pre-configured and responsive
-- 🧹 **ESLint + Prettier** – clean, consistent code
-- 🌿 **Scalable folder structure** – production standard
-- 📦 **Alias support** – easy path management
-- 🧪 Ready for unit & integration testing
-- ☁️ Vercel ready – just push and deploy
+- **Next.js 15+** with App Router
+- **TypeScript** – full type safety and custom config
+- **Tailwind CSS** – pre-configured and responsive
+- **ESLint + Prettier** – clean, consistent code
+- **Scalable folder structure** – production standard
+- **Alias support** – easy path management
+- Ready for unit & integration testing
+- Vercel ready – just push and deploy
 
 ## How to Start
 
@@ -99,7 +99,7 @@ During project creation, you'll be prompted to:
 
    **Note**: If you pick `bun`, make sure Bun is installed (`npm install -g bun` or visit [bun.sh](https://bun.sh)). For `pnpm` or `yarn`, install them first if needed.
 
-#### Available Scripts
+### Available Scripts
 
 The project includes several useful scripts:
 
@@ -294,20 +294,20 @@ Copy `.env.example` to `.env` for production settings.
 
 ### v1.3.0 (Latest)
 
-- ✨ **New Feature**: Interactive Husky selection during project creation
-- 🎯 **Template Branches**: Support for both `main` and `without-husky` branches
-- 🔧 **Enhanced CLI**: Better argument handling and help documentation
-- 📝 **Improved UX**: Clear feedback about which template is being used
-- 🎨 **Better Progress**: Enhanced progress indicators and user feedback
-- 🌟 **Professional Prompts**: Beautiful emojis and improved messaging throughout
-- ⚡ **Default Behavior**: Husky disabled by default for simpler setup
+- **New Feature**: Interactive Husky selection during project creation
+- **Template Branches**: Support for both `main` and `without-husky` branches
+- **Enhanced CLI**: Better argument handling and help documentation
+- **Improved UX**: Clear feedback about which template is being used
+- **Better Progress**: Enhanced progress indicators and user feedback
+- **Professional Prompts**: Beautiful emojis and improved messaging throughout
+- **Default Behavior**: Husky disabled by default for simpler setup
 
 ### v1.2.40
 
-- 🚀 **Initial Release**: Basic CLI functionality
-- 📦 **Package Manager Selection**: Support for bun, pnpm, yarn, npm
-- 🎨 **Beautiful UI**: Progress indicators and colorful output
-- ⚡ **Fast Setup**: Quick project initialization with degit
+- **Initial Release**: Basic CLI functionality
+- **Package Manager Selection**: Support for bun, pnpm, yarn, npm
+- **Beautiful UI**: Progress indicators and colorful output
+- **Fast Setup**: Quick project initialization with degit
 
 ## Want to Help?
 
