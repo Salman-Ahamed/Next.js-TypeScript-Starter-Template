@@ -3,7 +3,6 @@
 A **production-ready**, **scalable**, and **actively maintained** starter template for building high-quality web apps with **Next.js**, **TypeScript**, and **Tailwind CSS**.
 
 <br/>
-
 <p align="center">
   <img
     src="https://img.shields.io/npm/v/next-ts-app?style=for-the-badge&label=next-ts-app&labelColor=black&logo=npm&color=success"
@@ -21,7 +20,6 @@ A **production-ready**, **scalable**, and **actively maintained** starter templa
   <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwind-css&logoColor=white" alt="Tailwind CSS">
   <img src="https://img.shields.io/badge/ESLint-4B32C3?logo=eslint&logoColor=white" alt="ESLint">
   <img src="https://img.shields.io/badge/Prettier-F7B93E?logo=prettier&logoColor=black" alt="Prettier">
-  <img src="https://img.shields.io/badge/Husky-000000?logo=git&logoColor=white" alt="Husky">
 </p>
 <br/>
 
@@ -31,15 +29,14 @@ This starter template is designed for **developers of all levels** — from begi
 
 ### Key Features
 
-- ⚡️ **Next.js 15+** with App Router
-- ✅ **TypeScript** – full type safety and custom config
-- 🎨 **Tailwind CSS** – preconfigured and responsive
-- 🧹 **ESLint + Prettier** – clean, consistent code
-- 🔐 **Husky + lint-staged** – prevent bad commits
-- 🌿 **Scalable folder structure** – production standard
-- 📦 **Alias support** – easy path management
-- 🧪 Ready for unit & integration testing
-- ☁️ Vercel ready – just push and deploy
+- **Next.js 15+** with App Router
+- **TypeScript** – full type safety and custom config
+- **Tailwind CSS** – pre-configured and responsive
+- **ESLint + Prettier** – clean, consistent code
+- **Scalable folder structure** – production standard
+- **Alias support** – easy path management
+- Ready for unit & integration testing
+- Vercel ready – just push and deploy
 
 ## How to Start
 
@@ -62,13 +59,34 @@ Quickly set up your Next.js + TypeScript + TailwindCSS project using the CLI too
 
 During project creation, you'll be prompted to:
 
-1. **Project Name**: Enter a name for your project (e.g., `my-awesome-app`)
+1. **Project Name**: What's your project name? (e.g., `my-awesome-app`)
 2. **Package Manager**: Choose your preferred package manager:
 
-   - `bun` (Recommended for speed)
-   - `npm` (Most common)
-   - `yarn` (Alternative to npm)
-   - `pnpm` (Fast, disk-space efficient)
+   - `⚡ bun` (Recommended - Fastest)
+   - `🚀 pnpm` (Fast & Efficient)
+   - `🧶 yarn` (Reliable)
+   - `📦 npm` (Standard)
+
+3. **Husky Integration**: Set up Git hooks with Husky for automatic code quality checks:
+
+   - `No` (Default - Simpler setup) - Uses the `without-husky` branch template
+   - `Yes` (Recommended for code quality) - Uses the `main` branch template
+
+### Husky Integration
+
+**Without Husky (Default):**
+
+- ⚠️ Git hooks are disabled
+- ✅ Cleaner setup for simpler projects
+- ✅ Uses the `without-husky` branch of the template
+- 🔧 You can manually add Git hooks later if needed
+
+**With Husky (Recommended):**
+
+- ✅ Git hooks are automatically configured
+- ✅ ESLint and Prettier run on commit
+- ✅ Pre-commit hooks ensure code quality
+- ✅ Uses the `main` branch of the template
 
 3. Follow the steps shown:
    For example, if you choose `bun`:
@@ -81,7 +99,7 @@ During project creation, you'll be prompted to:
 
    **Note**: If you pick `bun`, make sure Bun is installed (`npm install -g bun` or visit [bun.sh](https://bun.sh)). For `pnpm` or `yarn`, install them first if needed.
 
-#### Available Scripts
+### Available Scripts
 
 The project includes several useful scripts:
 
@@ -114,11 +132,22 @@ The `clear-cache` script is particularly useful when you encounter build issues 
 
 After installation, you'll get:
 
+**Without Husky (Default - without-husky branch):**
+
 - ✅ Next.js 15 with App Router
 - ✅ TypeScript configuration
 - ✅ Tailwind CSS setup
 - ✅ ESLint & Prettier
-- ✅ Git hooks with Husky
+- ✅ Project structure ready to go
+
+**With Husky (main branch):**
+
+- ✅ Next.js 15 with App Router
+- ✅ TypeScript configuration
+- ✅ Tailwind CSS setup
+- ✅ ESLint & Prettier configuration
+- ✅ Husky Git hooks
+- ✅ Pre-commit hooks
 - ✅ Project structure ready to go
 
 ### Option 2: Use GitHub Template
@@ -239,8 +268,6 @@ These tools keep your code neat:
 - **ESLint**: Finds code mistakes.
 - **Prettier**: Formats code nicely.
 - **Tailwind CSS**: Organizes styles.
-- **Husky**: Checks code before commits.
-- **lint-staged**: Runs checks on changed files.
 
 Example rule for imports:
 
@@ -274,6 +301,25 @@ Copy `.env.example` to `.env` for production settings.
 <img src="https://github.com/Hashibul-Alam.png" width="80" height="80" alt="Hasibul Alam" /><br /> <b>Hasibul Alam</b><br/> <a href="https://github.com/Hashibul-Alam">GitHub</a> | <a href="https://www.linkedin.com/in/hasibul231/">LinkedIn</a> | <a href="mailto:sha31417@gmail.com">Email</a> </td> </tr> </table> </div>
 
 ---
+
+## Changelog
+
+### v1.3.0 (Latest)
+
+- **New Feature**: Interactive Husky selection during project creation
+- **Template Branches**: Support for both `main` and `without-husky` branches
+- **Enhanced CLI**: Better argument handling and help documentation
+- **Improved UX**: Clear feedback about which template is being used
+- **Better Progress**: Enhanced progress indicators and user feedback
+- **Professional Prompts**: Beautiful emojis and improved messaging throughout
+- **Default Behavior**: Husky disabled by default for simpler setup
+
+### v1.2.40
+
+- **Initial Release**: Basic CLI functionality
+- **Package Manager Selection**: Support for bun, pnpm, yarn, npm
+- **Beautiful UI**: Progress indicators and colorful output
+- **Fast Setup**: Quick project initialization with degit
 
 ## Want to Help?
 
