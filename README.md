@@ -269,6 +269,18 @@ These tools keep your code neat:
 - **Prettier**: Formats code nicely.
 - **Tailwind CSS**: Organizes styles.
 
+Example rule for imports:
+
+```javascript
+"import/order": [
+  "error",
+  {
+    "groups": ["builtin", "external", "internal"],
+    "alphabetize": { "order": "asc" }
+  }
+]
+```
+
 ## Deployment
 
 This template works with:
