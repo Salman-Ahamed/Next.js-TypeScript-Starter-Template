@@ -15,7 +15,7 @@ A **production-ready**, **scalable**, and **actively maintained** starter templa
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/Next.js-15.3.1-black?logo=next.js" alt="Nextjs">
+<img src="https://img.shields.io/badge/Next.js-16.0.10-black?logo=next.js" alt="Nextjs">
   <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" alt="TypeScript">
   <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwind-css&logoColor=white" alt="Tailwind CSS">
   <img src="https://img.shields.io/badge/ESLint-4B32C3?logo=eslint&logoColor=white" alt="ESLint">
@@ -29,9 +29,9 @@ This starter template is designed for **developers of all levels** — from begi
 
 ### Key Features
 
-- ⚡️ **Next.js 15+** with App Router
+- ⚡️ **Next.js 16+** with App Router
 - ✅ **TypeScript** – full type safety and custom config
-- 🎨 **Tailwind CSS** – preconfigured and responsive
+- 🎨 **Tailwind CSS v4** – preconfigured and responsive
 - 🧹 **ESLint + Prettier** – clean, consistent code
 - 🌿 **Scalable folder structure** – production standard
 - 📦 **Alias support** – easy path management
@@ -108,12 +108,14 @@ The project includes several useful scripts:
 bun run dev          # Start development server with Turbopack
 bun run build        # Create production build
 bun run start        # Start production server
-bun run lint         # Run ESLint
+bun run lint         # Run ESLint directly
 bun run lint:fix     # Fix ESLint errors
 bun run format       # Format code with Prettier
 bun run format:check # Check code formatting
 bun run clear-cache  # Clear Next.js cache, reinstall dependencies, and restart dev server
 ```
+
+**Note**: Next.js 16 has removed the `next lint` command. The template now uses ESLint directly.
 
 The `clear-cache` script is particularly useful when you encounter build issues or need to reset your development environment. It:
 
@@ -123,6 +125,7 @@ The `clear-cache` script is particularly useful when you encounter build issues 
 
 #### Prerequisites
 
+- **Node.js**: Version 20.9.0 or higher (required for Next.js 16)
 - For **Bun**: Install via `npm install -g bun`
 - For **pnpm**: Install via `npm install -g pnpm`
 - For **Yarn**: Install via `npm install -g yarn`
@@ -134,9 +137,9 @@ After installation, you'll get:
 
 **Without Husky (Default - without-husky branch):**
 
-- ✅ Next.js 15 with App Router
+- ✅ Next.js 16 with App Router
 - ✅ TypeScript configuration
-- ✅ Tailwind CSS setup
+- ✅ Tailwind CSS v4 setup
 - ✅ ESLint & Prettier
 - ✅ Project structure ready to go
 
@@ -294,7 +297,22 @@ Copy `.env.example` to `.env` for production settings.
 
 ## Changelog
 
-### v1.3.0 (Latest)
+### v1.4.0 (Latest)
+
+- **Major Update**: Upgraded to Next.js 16.0.10
+- **React 19**: Full support for React 19 features
+- **Tailwind CSS v4**: Using the latest Tailwind CSS version
+- **TypeScript**: Updated to ES2022 target for better performance
+- **ESLint**: Updated to latest Next.js 16 compatible version
+- **Prettier**: Updated to v3.4.2
+- **Performance**: Improved build times and runtime performance
+- **Breaking Changes**:
+  - Removed `next lint` command (use `eslint .` directly)
+  - Node.js 20.9.0+ now required
+- **Dependencies**: Added missing ESLint plugins (@typescript-eslint/eslint-plugin, @typescript-eslint/parser, eslint-plugin-import)
+- **Configuration**: Improved .gitignore with IDE and OS entries
+
+### v1.3.0
 
 - **New Feature**: Interactive Husky selection during project creation
 - **Template Branches**: Support for both `main` and `without-husky` branches
