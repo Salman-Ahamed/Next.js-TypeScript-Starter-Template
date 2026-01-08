@@ -29,14 +29,14 @@ This starter template is designed for **developers of all levels** — from begi
 
 ### Key Features
 
-- **Next.js 15+** with App Router
-- **TypeScript** – full type safety and custom config
-- **Tailwind CSS** – pre-configured and responsive
-- **ESLint + Prettier** – clean, consistent code
-- **Scalable folder structure** – production standard
-- **Alias support** – easy path management
-- Ready for unit & integration testing
-- Vercel ready – just push and deploy
+- ⚡️ **Next.js 15+** with App Router
+- ✅ **TypeScript** – full type safety and custom config
+- 🎨 **Tailwind CSS** – preconfigured and responsive
+- 🧹 **ESLint + Prettier** – clean, consistent code
+- 🌿 **Scalable folder structure** – production standard
+- 📦 **Alias support** – easy path management
+- 🧪 Ready for unit & integration testing
+- ☁️ Vercel ready – just push and deploy
 
 ## How to Start
 
@@ -138,16 +138,6 @@ After installation, you'll get:
 - ✅ TypeScript configuration
 - ✅ Tailwind CSS setup
 - ✅ ESLint & Prettier
-- ✅ Project structure ready to go
-
-**With Husky (main branch):**
-
-- ✅ Next.js 15 with App Router
-- ✅ TypeScript configuration
-- ✅ Tailwind CSS setup
-- ✅ ESLint & Prettier configuration
-- ✅ Husky Git hooks
-- ✅ Pre-commit hooks
 - ✅ Project structure ready to go
 
 ### Option 2: Use GitHub Template
