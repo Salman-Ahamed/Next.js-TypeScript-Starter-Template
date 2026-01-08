@@ -1,6 +1,6 @@
 {
   "name": "next.js-typescript-starting-template",
-  "version": "1.1.0",
+  "version": "1.4.0",
   "private": true,
   "author": {
     "name": "Salman Ahamed",
@@ -11,10 +11,10 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "prepare": "husky",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
-    "lint:fix": "next lint --fix",
+    "lint:fix": "eslint . --fix",
     "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "clear-cache": "rm -rf .next && bun install --no-cache && bun run dev"
   },
@@ -30,24 +30,32 @@
   "dependencies": {
     "clsx": "^2.1.1",
     "lucide-react": "^0.509.0",
-    "next": "15.3.8",
+    "next": "^16.0.10",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwind-merge": "^3.2.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@eslint/js": "^9",
+    "@next/eslint-plugin-next": "^16.0.10",
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
+    "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@typescript-eslint/eslint-plugin": "^8",
+    "@typescript-eslint/parser": "^8",
     "eslint": "^9",
-    "eslint-config-next": "15.3.1",
-    "husky": "^9.0.11",
-    "lint-staged": "^15.2.2",
-    "prettier": "^3.2.5",
+    "eslint-config-next": "^16.0.10",
+    "eslint-plugin-import": "^2.31.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.11",
+    "prettier": "^3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=20.9.0"
   }
 }
